@@ -7,8 +7,8 @@ git:
   remotes:
     origin:
       authenticationMethod: "USER_PASSWORD"
-      user: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
-      password: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
+      user: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
+      password: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
 changelog:
   path: "CHANGELOG.md"
   template: "CHANGELOG.tpl"
@@ -152,7 +152,7 @@ services:
       # See:
       # - https://docs.github.com/en/actions/security-guides/automatic-token-authentication
       # - https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
-      AUTHENTICATION_TOKEN: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
+      AUTHENTICATION_TOKEN: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
       REPOSITORY_NAME: "nyx-test"
       REPOSITORY_OWNER: "alpiquero"
 resume: true
