@@ -22,7 +22,7 @@ jobs:
       id: nyx
       uses: mooltiverse/nyx-github-action@main
       env:
-        GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        TOKEN: ${{ secrets.PAT_TOKEN }}
         NYX_VERBOSITY: 'INFO'
       with:
         command: 'publish'

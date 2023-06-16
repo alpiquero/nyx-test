@@ -146,7 +146,7 @@ services:
       # See:
       # - https://docs.github.com/en/actions/security-guides/automatic-token-authentication
       # - https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
-      AUTHENTICATION_TOKEN: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
+      AUTHENTICATION_TOKEN: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
       REPOSITORY_NAME: "nyx-test"
       REPOSITORY_OWNER: "alpiquero"
 resume: true
