@@ -7,7 +7,7 @@ git:
   remotes:
     origin:
       authenticationMethod: "USER_PASSWORD"
-      user: "{{#environmentVariable}}TOKEN{{/environmentVariable}}",
+      user: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
       password: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
 changelog:
   path: "CHANGELOG.md"
