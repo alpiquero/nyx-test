@@ -3,6 +3,12 @@
 # - the Conventional Commits convention
 # - the "mainline" and "internal" release types (that we override here)
 preset: "simple"
+git:
+  remotes:
+    origin:
+      authenticationMethod: "USER_PASSWORD"
+      user: "{{#environmentVariable}}TOKEN{{/environmentVariable}}",
+      password: "{{#environmentVariable}}TOKEN{{/environmentVariable}}"
 changelog:
   path: "CHANGELOG.md"
   template: "CHANGELOG.tpl"
