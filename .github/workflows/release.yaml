@@ -25,10 +25,10 @@ jobs:
       with:
         command: make
 
-    - name: Generate Artifacts with Nyx
-      uses: mooltiverse/nyx-github-action@main
-      with:
-        command: mark
+    # - name: Generate Artifacts with Nyx
+    #   uses: mooltiverse/nyx-github-action@main
+    #   with:
+    #     command: mark
 
     - name: Nyx publish
       id: nyx

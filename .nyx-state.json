@@ -1,6 +1,6 @@
 {
   "branch": "main",
-  "bump": "minor",
+  "bump": "patch",
   "changelog": {
     "releases": [
       {
@@ -267,8 +267,8 @@
     "infer.input.configured.scheme": "SEMVER",
     "infer.input.configured.version": "null",
     "infer.input.repository.current.branch": "main",
-    "infer.input.repository.last.commit": "6483b6e9a523fa22bf65682c24828fb67e8d56de",
-    "infer.output.state.version": "0.4.0",
+    "infer.input.repository.last.commit": "e9feb35a1f8580433ef7bb784175d6b07e08672e",
+    "infer.output.state.version": "0.4.1",
     "make.input.changelog.file": "/home/angelluis.piquero/projects/git/nyx-test/CHANGELOG.md",
     "make.input.repository.current.branch": "main",
     "make.input.repository.last.commit": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5",
@@ -289,7 +289,7 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687180015000,
+            "timeStamp": 1687180445000,
             "offset": 120
           }
         },
@@ -299,53 +299,85 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687180015000,
+            "timeStamp": 1687180445000,
             "offset": 120
           }
         },
-        "date": 1687180015000,
+        "date": 1687180445000,
         "message": {
-          "fullMessage": "fix: new fix\n",
-          "shortMessage": "fix: new fix"
+          "fullMessage": "fix: remove file\n",
+          "shortMessage": "fix: remove file"
         },
         "parents": [
-          "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+          "6483b6e9a523fa22bf65682c24828fb67e8d56de"
         ],
-        "sha": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
-      },
-      {
-        "authorAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687175936000,
-            "offset": 120
-          }
-        },
-        "commitAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687175936000,
-            "offset": 120
-          }
-        },
-        "date": 1687175936000,
-        "message": {
-          "fullMessage": "feat: add changes to nyx\n",
-          "shortMessage": "feat: add changes to nyx"
-        },
-        "parents": [
-          "46f3a0fdf3c96540e910d5fc75d3373df3041219"
-        ],
-        "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+        "sha": "e9feb35a1f8580433ef7bb784175d6b07e08672e"
       }
     ],
     "finalCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687180445000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687180445000,
+          "offset": 120
+        }
+      },
+      "date": 1687180445000,
+      "message": {
+        "fullMessage": "fix: remove file\n",
+        "shortMessage": "fix: remove file"
+      },
+      "parents": [
+        "6483b6e9a523fa22bf65682c24828fb67e8d56de"
+      ],
+      "sha": "e9feb35a1f8580433ef7bb784175d6b07e08672e"
+    },
+    "initialCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687180445000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687180445000,
+          "offset": 120
+        }
+      },
+      "date": 1687180445000,
+      "message": {
+        "fullMessage": "fix: remove file\n",
+        "shortMessage": "fix: remove file"
+      },
+      "parents": [
+        "6483b6e9a523fa22bf65682c24828fb67e8d56de"
+      ],
+      "sha": "e9feb35a1f8580433ef7bb784175d6b07e08672e"
+    },
+    "previousVersion": "0.4.0",
+    "previousVersionCommit": {
       "authorAction": {
         "identity": {
           "email": "angelluis.piquero@intelygenz.com",
@@ -374,82 +406,15 @@
       "parents": [
         "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
       ],
-      "sha": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
-    },
-    "initialCommit": {
-      "authorAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1687175936000,
-          "offset": 120
-        }
-      },
-      "commitAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1687175936000,
-          "offset": 120
-        }
-      },
-      "date": 1687175936000,
-      "message": {
-        "fullMessage": "feat: add changes to nyx\n",
-        "shortMessage": "feat: add changes to nyx"
-      },
-      "parents": [
-        "46f3a0fdf3c96540e910d5fc75d3373df3041219"
-      ],
-      "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
-    },
-    "previousVersion": "0.3.0",
-    "previousVersionCommit": {
-      "authorAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1686903717000,
-          "offset": 120
-        }
-      },
-      "commitAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1686903717000,
-          "offset": 120
-        }
-      },
-      "date": 1686903717000,
-      "message": {
-        "fullMessage": "feat: add new feature from develop\n",
-        "shortMessage": "feat: add new feature from develop"
-      },
-      "parents": [
-        "d000e6651692d4d98dd82ad33bb0bdd688da479b"
-      ],
       "tags": [
         {
-          "name": "0.3.0",
-          "target": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
-        },
-        {
-          "name": "0.3.0-develop.1",
-          "target": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+          "name": "0.4.0",
+          "target": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
         }
       ],
-      "sha": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+      "sha": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
     },
-    "primeVersion": "0.3.0",
+    "primeVersion": "0.4.0",
     "primeVersionCommit": {
       "authorAction": {
         "identity": {
@@ -457,7 +422,7 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1686903717000,
+          "timeStamp": 1687180015000,
           "offset": 120
         }
       },
@@ -467,29 +432,25 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1686903717000,
+          "timeStamp": 1687180015000,
           "offset": 120
         }
       },
-      "date": 1686903717000,
+      "date": 1687180015000,
       "message": {
-        "fullMessage": "feat: add new feature from develop\n",
-        "shortMessage": "feat: add new feature from develop"
+        "fullMessage": "fix: new fix\n",
+        "shortMessage": "fix: new fix"
       },
       "parents": [
-        "d000e6651692d4d98dd82ad33bb0bdd688da479b"
+        "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
       ],
       "tags": [
         {
-          "name": "0.3.0",
-          "target": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
-        },
-        {
-          "name": "0.3.0-develop.1",
-          "target": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+          "name": "0.4.0",
+          "target": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
         }
       ],
-      "sha": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+      "sha": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
     },
     "significantCommits": [
       {
@@ -499,7 +460,7 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687180015000,
+            "timeStamp": 1687180445000,
             "offset": 120
           }
         },
@@ -509,50 +470,19 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687180015000,
+            "timeStamp": 1687180445000,
             "offset": 120
           }
         },
-        "date": 1687180015000,
+        "date": 1687180445000,
         "message": {
-          "fullMessage": "fix: new fix\n",
-          "shortMessage": "fix: new fix"
+          "fullMessage": "fix: remove file\n",
+          "shortMessage": "fix: remove file"
         },
         "parents": [
-          "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+          "6483b6e9a523fa22bf65682c24828fb67e8d56de"
         ],
-        "sha": "6483b6e9a523fa22bf65682c24828fb67e8d56de"
-      },
-      {
-        "authorAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687175936000,
-            "offset": 120
-          }
-        },
-        "commitAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687175936000,
-            "offset": 120
-          }
-        },
-        "date": 1687175936000,
-        "message": {
-          "fullMessage": "feat: add changes to nyx\n",
-          "shortMessage": "feat: add changes to nyx"
-        },
-        "parents": [
-          "46f3a0fdf3c96540e910d5fc75d3373df3041219"
-        ],
-        "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+        "sha": "e9feb35a1f8580433ef7bb784175d6b07e08672e"
       }
     ]
   },
@@ -570,5 +500,5 @@
   },
   "scheme": "SEMVER",
   "timestamp": 1686902292892,
-  "version": "0.4.0"
+  "version": "0.4.1"
 }
