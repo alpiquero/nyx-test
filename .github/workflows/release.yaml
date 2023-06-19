@@ -19,16 +19,23 @@ jobs:
       uses: mooltiverse/nyx-github-action@main
       with:
         command: infer
+      env:
+        NYX_VERBOSITY: 'INFO'
 
     - name: Generate Artifacts with Nyx
       uses: mooltiverse/nyx-github-action@main
       with:
         command: make
+      env:
+        NYX_VERBOSITY: 'INFO'
 
-    # - name: Generate Artifacts with Nyx
-    #   uses: mooltiverse/nyx-github-action@main
-    #   with:
-    #     command: mark
+    - name: Generate Artifacts with Nyx
+      uses: mooltiverse/nyx-github-action@main
+      with:
+        command: mark
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NYX_VERBOSITY: 'INFO'
 
     - name: Nyx publish
       id: nyx
