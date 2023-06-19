@@ -1,6 +1,5 @@
 {
-  "branch": "release/test-release",
-  "bump": "minor",
+  "branch": "release/0.6.0",
   "configuration": {
     "changelog": {
       "path": "CHANGELOG.md",
@@ -185,7 +184,7 @@
           "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-(rel|release)((\\.([0-9]\\d*))?)?)$",
           "gitPush": "true",
           "gitTag": "true",
-          "matchBranches": "^(rel|release)(-|\\/)({{configuration.releasePrefix}})?([0-9|x]\\d*)(\\.([0-9|x]\\d*)(\\.([0-9|x]\\d*))?)?$",
+          "matchBranches": "^(rel|release)(-|\\/)({{configuration.releasePrefix}})?(([0-9|x]\\d*)\\.([0-9|x]\\d*)(\\.([0-9|x]\\d*))?)?$",
           "matchEnvironmentVariables": {
             "CI": "^true$"
           },
@@ -211,7 +210,7 @@
     "stateFile": ".nyx-state.json",
     "verbosity": "INFO"
   },
-  "coreVersion": false,
+  "coreVersion": true,
   "directory": "/home/angelluis.piquero/projects/git/nyx-test",
   "internals": {
     "infer.input.configured.bump": "null",
@@ -220,111 +219,16 @@
     "infer.input.configured.releasePrefix": "null",
     "infer.input.configured.scheme": "SEMVER",
     "infer.input.configured.version": "null",
-    "infer.input.repository.current.branch": "release/test-release",
-    "infer.input.repository.last.commit": "92d4464ff063e813cab405a36ffcc0c1c16911d3",
-    "infer.output.state.version": "0.5.0-internal.1+releasetestrelease.92d44.20230619133447"
+    "infer.input.repository.current.branch": "release/0.6.0",
+    "infer.input.repository.last.commit": "15db0e201d9ade7f5fa62f20c4692b3434b13609",
+    "infer.output.state.version": "0.5.0"
   },
   "latestVersion": true,
-  "newVersion": true,
+  "newVersion": false,
   "newRelease": false,
   "releaseAssets": [],
   "releaseScope": {
-    "commits": [
-      {
-        "authorAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687181624000,
-            "offset": 120
-          }
-        },
-        "commitAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687181624000,
-            "offset": 120
-          }
-        },
-        "date": 1687181624000,
-        "message": {
-          "fullMessage": "fix: add new file to test release branches\n",
-          "shortMessage": "fix: add new file to test release branches"
-        },
-        "parents": [
-          "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
-        ],
-        "sha": "92d4464ff063e813cab405a36ffcc0c1c16911d3"
-      }
-    ],
-    "finalCommit": {
-      "authorAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1687181624000,
-          "offset": 120
-        }
-      },
-      "commitAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1687181624000,
-          "offset": 120
-        }
-      },
-      "date": 1687181624000,
-      "message": {
-        "fullMessage": "fix: add new file to test release branches\n",
-        "shortMessage": "fix: add new file to test release branches"
-      },
-      "parents": [
-        "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
-      ],
-      "sha": "92d4464ff063e813cab405a36ffcc0c1c16911d3"
-    },
-    "initialCommit": {
-      "authorAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1687181624000,
-          "offset": 120
-        }
-      },
-      "commitAction": {
-        "identity": {
-          "email": "angelluis.piquero@intelygenz.com",
-          "name": "Angel Luis Piquero"
-        },
-        "timeStamp": {
-          "timeStamp": 1687181624000,
-          "offset": 120
-        }
-      },
-      "date": 1687181624000,
-      "message": {
-        "fullMessage": "fix: add new file to test release branches\n",
-        "shortMessage": "fix: add new file to test release branches"
-      },
-      "parents": [
-        "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
-      ],
-      "sha": "92d4464ff063e813cab405a36ffcc0c1c16911d3"
-    },
-    "previousVersion": "0.5.0-develop.2",
+    "previousVersion": "0.5.0",
     "previousVersionCommit": {
       "authorAction": {
         "identity": {
@@ -332,7 +236,7 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687181253000,
+          "timeStamp": 1687186686000,
           "offset": 120
         }
       },
@@ -342,27 +246,31 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687181253000,
+          "timeStamp": 1687186686000,
           "offset": 120
         }
       },
-      "date": 1687181253000,
+      "date": 1687186686000,
       "message": {
-        "fullMessage": "feat: add another test file\n",
-        "shortMessage": "feat: add another test file"
+        "fullMessage": "chore: fix nyx config again\n",
+        "shortMessage": "chore: fix nyx config again"
       },
       "parents": [
-        "6112eeb3344057f792c51863dcff4169c37cef5f"
+        "6d922811362ad2711796ba25376d4e6e82c57d2d"
       ],
       "tags": [
         {
-          "name": "0.5.0-develop.2",
-          "target": "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
+          "name": "0.5.0",
+          "target": "15db0e201d9ade7f5fa62f20c4692b3434b13609"
+        },
+        {
+          "name": "0.5.0-release.1",
+          "target": "15db0e201d9ade7f5fa62f20c4692b3434b13609"
         }
       ],
-      "sha": "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
+      "sha": "15db0e201d9ade7f5fa62f20c4692b3434b13609"
     },
-    "primeVersion": "0.4.1",
+    "primeVersion": "0.5.0",
     "primeVersionCommit": {
       "authorAction": {
         "identity": {
@@ -370,7 +278,7 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687180714000,
+          "timeStamp": 1687186686000,
           "offset": 120
         }
       },
@@ -380,133 +288,30 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687180714000,
+          "timeStamp": 1687186686000,
           "offset": 120
         }
       },
-      "date": 1687180714000,
+      "date": 1687186686000,
       "message": {
-        "fullMessage": "fix: remove Generate Artifacts workflow\n",
-        "shortMessage": "fix: remove Generate Artifacts workflow"
+        "fullMessage": "chore: fix nyx config again\n",
+        "shortMessage": "chore: fix nyx config again"
       },
       "parents": [
-        "57b2539b3cffb6dacbf89dfac80fdbe648281d60"
+        "6d922811362ad2711796ba25376d4e6e82c57d2d"
       ],
       "tags": [
         {
-          "name": "0.4.1",
-          "target": "d298dfcb4a42866d13aec4256366d5e5b37240a6"
+          "name": "0.5.0",
+          "target": "15db0e201d9ade7f5fa62f20c4692b3434b13609"
+        },
+        {
+          "name": "0.5.0-release.1",
+          "target": "15db0e201d9ade7f5fa62f20c4692b3434b13609"
         }
       ],
-      "sha": "d298dfcb4a42866d13aec4256366d5e5b37240a6"
-    },
-    "significantCommits": [
-      {
-        "authorAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687181624000,
-            "offset": 120
-          }
-        },
-        "commitAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687181624000,
-            "offset": 120
-          }
-        },
-        "date": 1687181624000,
-        "message": {
-          "fullMessage": "fix: add new file to test release branches\n",
-          "shortMessage": "fix: add new file to test release branches"
-        },
-        "parents": [
-          "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
-        ],
-        "sha": "92d4464ff063e813cab405a36ffcc0c1c16911d3"
-      },
-      {
-        "authorAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687181253000,
-            "offset": 120
-          }
-        },
-        "commitAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687181253000,
-            "offset": 120
-          }
-        },
-        "date": 1687181253000,
-        "message": {
-          "fullMessage": "feat: add another test file\n",
-          "shortMessage": "feat: add another test file"
-        },
-        "parents": [
-          "6112eeb3344057f792c51863dcff4169c37cef5f"
-        ],
-        "tags": [
-          {
-            "name": "0.5.0-develop.2",
-            "target": "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
-          }
-        ],
-        "sha": "bcc13e0784b6f7b9fe32e011a9c685a48d9176d3"
-      },
-      {
-        "authorAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687180899000,
-            "offset": 120
-          }
-        },
-        "commitAction": {
-          "identity": {
-            "email": "angelluis.piquero@intelygenz.com",
-            "name": "Angel Luis Piquero"
-          },
-          "timeStamp": {
-            "timeStamp": 1687180899000,
-            "offset": 120
-          }
-        },
-        "date": 1687180899000,
-        "message": {
-          "fullMessage": "feat: add test_file\n",
-          "shortMessage": "feat: add test_file"
-        },
-        "parents": [
-          "b596d9b0dd39b98674d82023edd6c74bc4dcf236"
-        ],
-        "tags": [
-          {
-            "name": "0.5.0-develop.1",
-            "target": "479359e19cae3847180642011c725ff1ba9f7047"
-          }
-        ],
-        "sha": "479359e19cae3847180642011c725ff1ba9f7047"
-      }
-    ]
+      "sha": "15db0e201d9ade7f5fa62f20c4692b3434b13609"
+    }
   },
   "releaseType": {
     "collapseVersions": true,
@@ -532,5 +337,5 @@
   },
   "scheme": "SEMVER",
   "timestamp": 1687181687802,
-  "version": "0.5.0-internal.1+releasetestrelease.92d44.20230619133447"
+  "version": "0.5.0"
 }
