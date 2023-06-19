@@ -1,5 +1,52 @@
 {
   "branch": "main",
+  "bump": "minor",
+  "changelog": {
+    "releases": [
+      {
+        "date": "2023-06-16",
+        "name": "0.4.0-internal.1+main.c1a23.20230616075812",
+        "sections": [
+          {
+            "name": "Added",
+            "commits": [
+              {
+                "authorAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687175936000,
+                    "offset": 120
+                  }
+                },
+                "commitAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687175936000,
+                    "offset": 120
+                  }
+                },
+                "date": 1687175936000,
+                "message": {
+                  "fullMessage": "feat: add changes to nyx\n",
+                  "shortMessage": "feat: add changes to nyx"
+                },
+                "parents": [
+                  "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+                ],
+                "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "configuration": {
     "changelog": {
       "path": "CHANGELOG.md",
@@ -210,7 +257,7 @@
     "stateFile": ".nyx-state.json",
     "verbosity": "WARNING"
   },
-  "coreVersion": true,
+  "coreVersion": false,
   "directory": "/home/angelluis.piquero/projects/git/nyx-test",
   "internals": {
     "infer.input.configured.bump": "null",
@@ -220,20 +267,115 @@
     "infer.input.configured.scheme": "SEMVER",
     "infer.input.configured.version": "null",
     "infer.input.repository.current.branch": "main",
-    "infer.input.repository.last.commit": "46f3a0fdf3c96540e910d5fc75d3373df3041219",
-    "infer.output.state.version": "0.3.0",
+    "infer.input.repository.last.commit": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5",
+    "infer.output.state.version": "0.4.0-internal.1+main.c1a23.20230616075812",
     "make.input.changelog.file": "/home/angelluis.piquero/projects/git/nyx-test/CHANGELOG.md",
     "make.input.repository.current.branch": "main",
-    "make.input.repository.last.commit": "46f3a0fdf3c96540e910d5fc75d3373df3041219",
-    "make.input.state.initialCommit": "null",
-    "make.input.state.newVersion": "false",
-    "make.input.version": "0.3.0"
+    "make.input.repository.last.commit": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5",
+    "make.input.state.initialCommit": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5",
+    "make.input.state.newVersion": "true",
+    "make.input.version": "0.4.0-internal.1+main.c1a23.20230616075812"
   },
   "latestVersion": true,
-  "newVersion": false,
+  "newVersion": true,
   "newRelease": false,
   "releaseAssets": [],
   "releaseScope": {
+    "commits": [
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687175936000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687175936000,
+            "offset": 120
+          }
+        },
+        "date": 1687175936000,
+        "message": {
+          "fullMessage": "feat: add changes to nyx\n",
+          "shortMessage": "feat: add changes to nyx"
+        },
+        "parents": [
+          "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+        ],
+        "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+      }
+    ],
+    "finalCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687175936000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687175936000,
+          "offset": 120
+        }
+      },
+      "date": 1687175936000,
+      "message": {
+        "fullMessage": "feat: add changes to nyx\n",
+        "shortMessage": "feat: add changes to nyx"
+      },
+      "parents": [
+        "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+      ],
+      "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+    },
+    "initialCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687175936000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687175936000,
+          "offset": 120
+        }
+      },
+      "date": 1687175936000,
+      "message": {
+        "fullMessage": "feat: add changes to nyx\n",
+        "shortMessage": "feat: add changes to nyx"
+      },
+      "parents": [
+        "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+      ],
+      "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+    },
     "previousVersion": "0.3.0",
     "previousVersionCommit": {
       "authorAction": {
@@ -317,7 +459,40 @@
         }
       ],
       "sha": "46f3a0fdf3c96540e910d5fc75d3373df3041219"
-    }
+    },
+    "significantCommits": [
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687175936000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687175936000,
+            "offset": 120
+          }
+        },
+        "date": 1687175936000,
+        "message": {
+          "fullMessage": "feat: add changes to nyx\n",
+          "shortMessage": "feat: add changes to nyx"
+        },
+        "parents": [
+          "46f3a0fdf3c96540e910d5fc75d3373df3041219"
+        ],
+        "sha": "c1a23ebe3a9e19894ad4ec9d6eb730e23b00d4d5"
+      }
+    ]
   },
   "releaseType": {
     "collapseVersions": true,
@@ -343,5 +518,5 @@
   },
   "scheme": "SEMVER",
   "timestamp": 1686902292892,
-  "version": "0.3.0"
+  "version": "0.4.0-internal.1+main.c1a23.20230616075812"
 }
