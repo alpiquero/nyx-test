@@ -29,7 +29,7 @@ jobs:
       env:
         NYX_VERBOSITY: 'INFO'
 
-    - name: Generate Artifacts with Nyx
+    - name: Mark Artifacts with Nyx
       uses: mooltiverse/nyx-github-action@main
       with:
         command: mark
