@@ -18,6 +18,12 @@ jobs:
       uses: mooltiverse/nyx-github-action@main
       with:
         command: infer
+
+    - name: Generate Artifacts with Nyx
+      uses: mooltiverse/nyx-github-action@main
+      with:
+        command: make
+
     - name: Nyx publish
       id: nyx
       uses: mooltiverse/nyx-github-action@main

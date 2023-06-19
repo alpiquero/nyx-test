@@ -1,7 +1,7 @@
 # Nyx Changelog
 
 {{#releases}}
-## [{{name}}](https://github.com/mooltiverse/alpiquero/nyx-test/tag/{{name}}) ({{date}})
+## [{{name}}](https://github.com/alpiquero/nyx-test/tag/{{name}}) ({{date}})
 
 {{#sections}}
 ### {{name}}

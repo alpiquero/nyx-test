@@ -15,6 +15,7 @@ changelog:
   sections:
     "Added": "^feat$"
     "Fixed": "^fix$"
+    "Changed": "^(chore|perf|style|docs)$"
   substitutions:
     "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/mooltiverse/nyx/issues/%s)"
 releaseTypes: 
