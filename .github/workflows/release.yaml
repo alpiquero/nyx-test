@@ -65,4 +65,3 @@ jobs:
         NYX_VERBOSITY: 'INFO'
       with:
         command: 'publish'
-        bump: steps.nyx-infer.outputs.bump
