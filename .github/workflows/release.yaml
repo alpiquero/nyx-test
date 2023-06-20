@@ -31,7 +31,7 @@ jobs:
     - name: Move CHANGELOG.md to increment
       if: github.ref_name == 'main'
       run: |
-        mv CHANGELOG.md CHANGELOG.md.old || true
+        mv CHANGELOG.md changelog.old || true
 
     - name: Generate Artifacts with Nyx
       uses: mooltiverse/nyx-github-action@main

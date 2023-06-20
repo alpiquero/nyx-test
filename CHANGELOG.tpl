@@ -22,4 +22,4 @@ No changes.
 No releases.
 {{/releases}}
 
-{{#fileContent}}changelog.md.old{{/fileContent}}
+{{#fileContent}}changelog.old{{/fileContent}}
