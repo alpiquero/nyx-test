@@ -1,3 +1,22 @@
+## [0.16.0](https://github.com/alpiquero/nyx-test/tag/0.16.0) (2023-06-20)
+
+### Added
+
+* [[7f7e9](https://github.com/alpiquero/nyx-test/commit/7f7e986bdfe5e65e1a189f642f0e4317f49dd3d3)] feat: restore
+ (Angel Luis Piquero, 2023-06-20T13:14:30)
+
+* [[41eb6](https://github.com/alpiquero/nyx-test/commit/41eb6c82112d9d13b9b48e62e6ce9dd6d8da6295)] feat: use three
+ (Angel Luis Piquero, 2023-06-20T13:10:08)
+
+* [[13825](https://github.com/alpiquero/nyx-test/commit/1382595e8e77527034188c9fe57b9d306ee553d8)] feat: use two steps
+ (Angel Luis Piquero, 2023-06-20T13:07:34)
+
+### Fixed
+
+* [[593f1](https://github.com/alpiquero/nyx-test/commit/593f12d89f502508fc17d9e32719b41272c33c8b)] fix: bump version to publish
+ (Angel Luis Piquero, 2023-06-20T12:55:35)
+
+
 ## [0.15.1](https://github.com/alpiquero/nyx-test/tag/0.15.1) (2023-06-20)
 
 ### Fixed
