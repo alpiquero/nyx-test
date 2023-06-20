@@ -7,7 +7,7 @@
 ### {{name}}
 
 {{#commits}}
-* [{{#short5}}{{SHA}}{{/short5}}](https://github.com/alpiquero/nyx-test/commit/{{SHA}}) {{message.shortMessage}} ({{authorAction.identity.name}})
+* [[{{#short5}}{{sha}}{{/short5}}](https://github.com/alpiquero/nyx-test/commit/{{sha}})] {{message.fullMessage}} ({{authorAction.identity.name}}, {{#timestampISO8601}}{{commitAction.timeStamp.timeStamp}}{{/timestampISO8601}})
 
 {{/commits}}
 {{^commits}}
@@ -21,3 +21,5 @@ No changes.
 {{^releases}}
 No releases.
 {{/releases}}
+
+{{#fileContent}}.changelog.old{{/fileContent}}
