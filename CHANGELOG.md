@@ -1,3 +1,16 @@
+## [0.12.0](https://github.com/alpiquero/nyx-test/tag/0.12.0) (2023-06-20)
+
+### Added
+
+* [[9eb11](https://github.com/alpiquero/nyx-test/commit/9eb1142c421ad4ab412ca1889fe898f26cb5ed5a)] feat: remove changelog.old
+ (Angel Luis Piquero, 2023-06-20T11:52:23)
+
+### Changed
+
+* [[367d3](https://github.com/alpiquero/nyx-test/commit/367d3f231b37cfbef86ad9367b47993cc2f0cff5)] chore: add gitignore
+ (Angel Luis Piquero, 2023-06-20T11:52:01)
+
+
 # Nyx Changelog
 
 ## [0.11.3](https://github.com/alpiquero/nyx-test/tag/0.11.3) (2023-06-20)
