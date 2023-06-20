@@ -1,3 +1,19 @@
+## [0.23.0](https://github.com/alpiquero/nyx-test/tag/0.23.0) (2023-06-20)
+
+### Changed
+
+* [[1fd23](https://github.com/alpiquero/nyx-test/commit/1fd231277321298c3a682ec50e4666764a7315dc)] chore: restore changelog
+ (Angel Luis Piquero, 2023-06-20T16:12:52)
+
+### Added
+
+* [[00cbe](https://github.com/alpiquero/nyx-test/commit/00cbe72700fdb5be6f038edc27aec32af44c4e08)] feat: update values
+ (Angel Luis Piquero, 2023-06-20T16:10:13)
+
+* [[91fa7](https://github.com/alpiquero/nyx-test/commit/91fa7c2c528fd78bc3a6f7a1a8128c697d830ab7)] feat: remove file
+ (Angel Luis Piquero, 2023-06-20T15:32:58)
+
+
 ## [0.23.0-develop.4](https://github.com/alpiquero/nyx-test/tag/0.23.0-develop.4) (2023-06-20)
 
 ### Fixed
