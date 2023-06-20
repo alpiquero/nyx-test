@@ -1,8 +1,8 @@
-## [0.23.0-develop.2](https://github.com/alpiquero/nyx-test/tag/0.23.0-develop.2) (2023-06-20)
+## [0.23.0-develop.3](https://github.com/alpiquero/nyx-test/tag/0.23.0-develop.3) (2023-06-20)
 
-### Added
+### Fixed
 
-* [[00cbe](https://github.com/alpiquero/nyx-test/commit/00cbe72700fdb5be6f038edc27aec32af44c4e08)] feat: update values
- (Angel Luis Piquero, 2023-06-20T16:10:13)
+* [[87d5e](https://github.com/alpiquero/nyx-test/commit/87d5eeef46ab5489d65545e0acd81e01430be1bb)] fix: nyx
+ (Angel Luis Piquero, 2023-06-20T16:19:31)
 
 
