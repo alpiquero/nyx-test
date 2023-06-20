@@ -5,7 +5,7 @@
     "releases": [
       {
         "date": "2023-06-20",
-        "name": "0.11.2",
+        "name": "0.11.3",
         "sections": [
           {
             "name": "Fixed",
@@ -17,7 +17,7 @@
                     "name": "Angel Luis Piquero"
                   },
                   "timeStamp": {
-                    "timeStamp": 1687261501000,
+                    "timeStamp": 1687261669000,
                     "offset": 120
                   }
                 },
@@ -27,19 +27,19 @@
                     "name": "Angel Luis Piquero"
                   },
                   "timeStamp": {
-                    "timeStamp": 1687261501000,
+                    "timeStamp": 1687261669000,
                     "offset": 120
                   }
                 },
-                "date": 1687261501000,
+                "date": 1687261669000,
                 "message": {
-                  "fullMessage": "fix: changelog again\n",
-                  "shortMessage": "fix: changelog again"
+                  "fullMessage": "fix: changelog once again\n",
+                  "shortMessage": "fix: changelog once again"
                 },
                 "parents": [
-                  "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+                  "623af82d274e259573f9494e428069fc9cf444ea"
                 ],
-                "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+                "sha": "3e7998113236e7ebb610e462707ff3e74b7b1d97"
               }
             ]
           }
@@ -223,14 +223,14 @@
     "infer.input.configured.scheme": "SEMVER",
     "infer.input.configured.version": "null",
     "infer.input.repository.current.branch": "main",
-    "infer.input.repository.last.commit": "e97bf4ad65e450180d782b34b61d10d8663b668c",
-    "infer.output.state.version": "0.11.2",
+    "infer.input.repository.last.commit": "3e7998113236e7ebb610e462707ff3e74b7b1d97",
+    "infer.output.state.version": "0.11.3",
     "make.input.changelog.file": "/github/workspace/CHANGELOG.md",
     "make.input.repository.current.branch": "main",
-    "make.input.repository.last.commit": "e97bf4ad65e450180d782b34b61d10d8663b668c",
-    "make.input.state.initialCommit": "e97bf4ad65e450180d782b34b61d10d8663b668c",
+    "make.input.repository.last.commit": "3e7998113236e7ebb610e462707ff3e74b7b1d97",
+    "make.input.state.initialCommit": "3e7998113236e7ebb610e462707ff3e74b7b1d97",
     "make.input.state.newVersion": "true",
-    "make.input.version": "0.11.2"
+    "make.input.version": "0.11.3"
   },
   "latestVersion": true,
   "newVersion": true,
@@ -245,7 +245,7 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687261501000,
+            "timeStamp": 1687261669000,
             "offset": 120
           }
         },
@@ -255,19 +255,19 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687261501000,
+            "timeStamp": 1687261669000,
             "offset": 120
           }
         },
-        "date": 1687261501000,
+        "date": 1687261669000,
         "message": {
-          "fullMessage": "fix: changelog again\n",
-          "shortMessage": "fix: changelog again"
+          "fullMessage": "fix: changelog once again\n",
+          "shortMessage": "fix: changelog once again"
         },
         "parents": [
-          "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+          "623af82d274e259573f9494e428069fc9cf444ea"
         ],
-        "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+        "sha": "3e7998113236e7ebb610e462707ff3e74b7b1d97"
       }
     ],
     "finalCommit": {
@@ -277,7 +277,7 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687261501000,
+          "timeStamp": 1687261669000,
           "offset": 120
         }
       },
@@ -287,19 +287,19 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687261501000,
+          "timeStamp": 1687261669000,
           "offset": 120
         }
       },
-      "date": 1687261501000,
+      "date": 1687261669000,
       "message": {
-        "fullMessage": "fix: changelog again\n",
-        "shortMessage": "fix: changelog again"
+        "fullMessage": "fix: changelog once again\n",
+        "shortMessage": "fix: changelog once again"
       },
       "parents": [
-        "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+        "623af82d274e259573f9494e428069fc9cf444ea"
       ],
-      "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+      "sha": "3e7998113236e7ebb610e462707ff3e74b7b1d97"
     },
     "initialCommit": {
       "authorAction": {
@@ -308,7 +308,7 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687261501000,
+          "timeStamp": 1687261669000,
           "offset": 120
         }
       },
@@ -318,21 +318,21 @@
           "name": "Angel Luis Piquero"
         },
         "timeStamp": {
-          "timeStamp": 1687261501000,
+          "timeStamp": 1687261669000,
           "offset": 120
         }
       },
-      "date": 1687261501000,
+      "date": 1687261669000,
       "message": {
-        "fullMessage": "fix: changelog again\n",
-        "shortMessage": "fix: changelog again"
+        "fullMessage": "fix: changelog once again\n",
+        "shortMessage": "fix: changelog once again"
       },
       "parents": [
-        "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+        "623af82d274e259573f9494e428069fc9cf444ea"
       ],
-      "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+      "sha": "3e7998113236e7ebb610e462707ff3e74b7b1d97"
     },
-    "previousVersion": "0.11.1",
+    "previousVersion": "0.11.2",
     "previousVersionCommit": {
       "authorAction": {
         "identity": {
@@ -340,7 +340,7 @@
           "name": "alpiquero"
         },
         "timeStamp": {
-          "timeStamp": 1687260869000,
+          "timeStamp": 1687261524000,
           "offset": 0
         }
       },
@@ -350,27 +350,27 @@
           "name": "alpiquero"
         },
         "timeStamp": {
-          "timeStamp": 1687260869000,
+          "timeStamp": 1687261524000,
           "offset": 0
         }
       },
-      "date": 1687260869000,
+      "date": 1687261524000,
       "message": {
-        "fullMessage": "Release version 0.11.1",
-        "shortMessage": "Release version 0.11.1"
+        "fullMessage": "Release version 0.11.2",
+        "shortMessage": "Release version 0.11.2"
       },
       "parents": [
-        "66b94c6750ab8160caf0b316668d406468fcfe35"
+        "e97bf4ad65e450180d782b34b61d10d8663b668c"
       ],
       "tags": [
         {
-          "name": "0.11.1",
-          "target": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+          "name": "0.11.2",
+          "target": "623af82d274e259573f9494e428069fc9cf444ea"
         }
       ],
-      "sha": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+      "sha": "623af82d274e259573f9494e428069fc9cf444ea"
     },
-    "primeVersion": "0.11.1",
+    "primeVersion": "0.11.2",
     "primeVersionCommit": {
       "authorAction": {
         "identity": {
@@ -378,7 +378,7 @@
           "name": "alpiquero"
         },
         "timeStamp": {
-          "timeStamp": 1687260869000,
+          "timeStamp": 1687261524000,
           "offset": 0
         }
       },
@@ -388,25 +388,25 @@
           "name": "alpiquero"
         },
         "timeStamp": {
-          "timeStamp": 1687260869000,
+          "timeStamp": 1687261524000,
           "offset": 0
         }
       },
-      "date": 1687260869000,
+      "date": 1687261524000,
       "message": {
-        "fullMessage": "Release version 0.11.1",
-        "shortMessage": "Release version 0.11.1"
+        "fullMessage": "Release version 0.11.2",
+        "shortMessage": "Release version 0.11.2"
       },
       "parents": [
-        "66b94c6750ab8160caf0b316668d406468fcfe35"
+        "e97bf4ad65e450180d782b34b61d10d8663b668c"
       ],
       "tags": [
         {
-          "name": "0.11.1",
-          "target": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+          "name": "0.11.2",
+          "target": "623af82d274e259573f9494e428069fc9cf444ea"
         }
       ],
-      "sha": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+      "sha": "623af82d274e259573f9494e428069fc9cf444ea"
     },
     "significantCommits": [
       {
@@ -416,7 +416,7 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687261501000,
+            "timeStamp": 1687261669000,
             "offset": 120
           }
         },
@@ -426,19 +426,19 @@
             "name": "Angel Luis Piquero"
           },
           "timeStamp": {
-            "timeStamp": 1687261501000,
+            "timeStamp": 1687261669000,
             "offset": 120
           }
         },
-        "date": 1687261501000,
+        "date": 1687261669000,
         "message": {
-          "fullMessage": "fix: changelog again\n",
-          "shortMessage": "fix: changelog again"
+          "fullMessage": "fix: changelog once again\n",
+          "shortMessage": "fix: changelog once again"
         },
         "parents": [
-          "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+          "623af82d274e259573f9494e428069fc9cf444ea"
         ],
-        "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+        "sha": "3e7998113236e7ebb610e462707ff3e74b7b1d97"
       }
     ]
   },
@@ -457,5 +457,5 @@
   },
   "scheme": "SEMVER",
   "timestamp": 1687261523159,
-  "version": "0.11.2"
+  "version": "0.11.3"
 }
