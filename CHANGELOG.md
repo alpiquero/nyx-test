@@ -1,3 +1,11 @@
+## [0.15.0](https://github.com/alpiquero/nyx-test/tag/0.15.0) (2023-06-20)
+
+### Added
+
+* [[a1783](https://github.com/alpiquero/nyx-test/commit/a1783c9e12f6e912a3dc938ee244ac9f95b62411)] feat: add additional infer step
+ (Angel Luis Piquero, 2023-06-20T12:49:43)
+
+
 ## [0.14.0](https://github.com/alpiquero/nyx-test/tag/0.14.0) (2023-06-20)
 
 ### Added
