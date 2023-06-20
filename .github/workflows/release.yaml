@@ -63,5 +63,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NYX_VERBOSITY: 'INFO'
+        NYX_BUMP: ${{ steps.nyx-infer.outputs.bump }}
+        NYX_VERSION: ${{ steps.nyx-infer.outputs.version }}
       with:
         command: 'publish'
