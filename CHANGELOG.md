@@ -1,10 +1,6 @@
 ## [0.19.0](https://github.com/alpiquero/nyx-test/tag/0.19.0) (2023-06-20)
 
-### Added
-
-* [[ed265](https://github.com/alpiquero/nyx-test/commit/ed265a86a23a9cd9733a814656350b6a089f3290)] feat: create file
- (Angel Luis Piquero, 2023-06-20T13:42:22)
-
+No changes.
 
 ## [0.18.0](https://github.com/alpiquero/nyx-test/tag/0.18.0) (2023-06-20)
 
