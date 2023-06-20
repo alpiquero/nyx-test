@@ -1,3 +1,11 @@
+## [0.23.0-develop.5](https://github.com/alpiquero/nyx-test/tag/0.23.0-develop.5) (2023-06-20)
+
+### Fixed
+
+* [[ebd23](https://github.com/alpiquero/nyx-test/commit/ebd232e85cad1183d6a18e6a05f967ab388c529e)] fix: changelog
+ (Angel Luis Piquero, 2023-06-20T16:22:18)
+
+
 ## [0.22.0](https://github.com/alpiquero/nyx-test/tag/0.22.0) (2023-06-20)
 
 ### Added
