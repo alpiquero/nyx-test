@@ -1,3 +1,11 @@
+## [0.20.0](https://github.com/alpiquero/nyx-test/tag/0.20.0) (2023-06-20)
+
+### Added
+
+* [[0fd7b](https://github.com/alpiquero/nyx-test/commit/0fd7bb20f08a8bc86afb1e3c56ccd6ff7f921473)] feat: comment changelog step
+ (Angel Luis Piquero, 2023-06-20T14:51:08)
+
+
 ## [0.19.0](https://github.com/alpiquero/nyx-test/tag/0.19.0) (2023-06-20)
 
 No changes.
