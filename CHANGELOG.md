@@ -1,3 +1,11 @@
+## [0.18.0](https://github.com/alpiquero/nyx-test/tag/0.18.0) (2023-06-20)
+
+### Added
+
+* [[b6d81](https://github.com/alpiquero/nyx-test/commit/b6d8100edaf136eb83b76ff63a8b32744250a5a1)] feat: try publish version
+ (Angel Luis Piquero, 2023-06-20T13:39:23)
+
+
 ## [0.17.1](https://github.com/alpiquero/nyx-test/tag/0.17.1) (2023-06-20)
 
 ### Fixed
