@@ -16,11 +16,17 @@ jobs:
         fetch-depth: 0
 
     - name: Run nyx Infer
+      id: nyx-infer
       uses: mooltiverse/nyx-github-action@main
       with:
         command: infer
       env:
         NYX_VERBOSITY: 'INFO'
+
+    - name: Move CHANGELOG.md to increment
+      if: github.ref_name == 'main'
+      run: |
+        mv CHANGELOG.md CHANGELOG.md.old || true
 
     - name: Generate Artifacts with Nyx
       uses: mooltiverse/nyx-github-action@main
