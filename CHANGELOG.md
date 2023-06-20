@@ -1,3 +1,11 @@
+## [0.17.1](https://github.com/alpiquero/nyx-test/tag/0.17.1) (2023-06-20)
+
+### Fixed
+
+* [[dd395](https://github.com/alpiquero/nyx-test/commit/dd3956ff9dc3c984294a89294eeed2e874017988)] fix: wf
+ (Angel Luis Piquero, 2023-06-20T13:24:14)
+
+
 ## [0.17.0](https://github.com/alpiquero/nyx-test/tag/0.17.0) (2023-06-20)
 
 ### Changed
