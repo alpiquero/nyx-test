@@ -1,3 +1,11 @@
+## [0.24.0-develop.1](https://github.com/alpiquero/nyx-test/tag/0.24.0-develop.1) (2023-06-20)
+
+### Added
+
+* [[78477](https://github.com/alpiquero/nyx-test/commit/78477f4cc0add42b6df9dae6101f09757272cf1f)] feat: create file
+ (Angel Luis Piquero, 2023-06-20T16:33:54)
+
+
 ## [0.23.0](https://github.com/alpiquero/nyx-test/tag/0.23.0) (2023-06-20)
 
 ### Changed
