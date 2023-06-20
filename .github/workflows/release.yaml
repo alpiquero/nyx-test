@@ -57,13 +57,6 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NYX_VERBOSITY: 'INFO'
 
-    - name: Nyx infer
-      uses: mooltiverse/nyx-github-action@main
-      env:
-        NYX_VERBOSITY: 'INFO'
-      with:
-        command: 'infer'
-
     - name: Nyx publish
       id: nyx
       uses: mooltiverse/nyx-github-action@main
@@ -72,3 +65,4 @@ jobs:
         NYX_VERBOSITY: 'INFO'
       with:
         command: 'publish'
+        bump: steps.nyx-infer.outputs.bump
