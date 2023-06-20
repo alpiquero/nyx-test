@@ -1,10 +1,10 @@
 # Nyx Changelog
 
-## [0.11.0](https://github.com/alpiquero/nyx-test/tag/0.11.0) (2023-06-20)
+## [0.11.1](https://github.com/alpiquero/nyx-test/tag/0.11.1) (2023-06-20)
 
-### Added
+### Fixed
 
-* [[7fa13](https://github.com/alpiquero/nyx-test/commit/7fa133e5feceaea39f783377c5aefa1752446ef2)] feat: add more values
- (Angel Luis Piquero, 2023-06-20T11:31:26)
+* [[66b94](https://github.com/alpiquero/nyx-test/commit/66b94c6750ab8160caf0b316668d406468fcfe35)] fix: changelog generation
+ (Angel Luis Piquero, 2023-06-20T11:34:02)
 
 
