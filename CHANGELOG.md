@@ -1,4 +1,4 @@
-## [0.25.1-hotfixtesthf.1](https://github.com/alpiquero/nyx-test/tag/0.25.1-hotfixtesthf.1) (2023-06-20)
+## [0.25.1](https://github.com/alpiquero/nyx-test/tag/0.25.1) (2023-06-20)
 
 ### Fixed
 
