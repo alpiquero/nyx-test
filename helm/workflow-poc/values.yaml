@@ -10,7 +10,7 @@ package1:
   hello: world
   new: this
   more: features
-  other: fix
+  other: fixasda
 package2:
   image:
     repository: nginx
@@ -24,3 +24,4 @@ package2:
   next: value
   this: value
   more: values
+
