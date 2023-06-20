@@ -1,0 +1,461 @@
+{
+  "branch": "main",
+  "bump": "patch",
+  "changelog": {
+    "releases": [
+      {
+        "date": "2023-06-20",
+        "name": "0.11.2",
+        "sections": [
+          {
+            "name": "Fixed",
+            "commits": [
+              {
+                "authorAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687261501000,
+                    "offset": 120
+                  }
+                },
+                "commitAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687261501000,
+                    "offset": 120
+                  }
+                },
+                "date": 1687261501000,
+                "message": {
+                  "fullMessage": "fix: changelog again\n",
+                  "shortMessage": "fix: changelog again"
+                },
+                "parents": [
+                  "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+                ],
+                "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "configuration": {
+    "changelog": {
+      "path": "CHANGELOG.md",
+      "sections": {
+        "Added": "^feat$",
+        "Changed": "^(chore|perf|style|docs)$",
+        "Fixed": "^fix$"
+      },
+      "substitutions": {
+        "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/mooltiverse/nyx/issues/%s)"
+      },
+      "template": "CHANGELOG.tpl"
+    },
+    "commitMessageConventions": {
+      "enabled": [
+        "conventionalCommits"
+      ],
+      "items": {
+        "conventionalCommits": {
+          "expression": "(?m)^(?\u003ctype\u003e[a-zA-Z0-9_]+)(!)?(\\((?\u003cscope\u003e[a-z ]+)\\))?:( (?\u003ctitle\u003e.+))$(?s).*",
+          "bumpExpressions": {
+            "major": "(?s)(?m)^[a-zA-Z0-9_]+(!|.*^(BREAKING( |-)CHANGE: )).*",
+            "minor": "(?s)(?m)^feat(?!!|.*^(BREAKING( |-)CHANGE: )).*",
+            "patch": "(?s)(?m)^fix(?!!|.*^(BREAKING( |-)CHANGE: )).*"
+          }
+        }
+      }
+    },
+    "directory": "/github/workspace",
+    "dryRun": false,
+    "git": {
+      "remotes": {
+        "origin": {
+          "authenticationMethod": "USER_PASSWORD",
+          "user": "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}",
+          "password": "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
+        }
+      }
+    },
+    "initialVersion": "0.1.0",
+    "preset": "simple",
+    "releaseAssets": {},
+    "releaseLenient": true,
+    "releaseTypes": {
+      "enabled": [
+        "mainline",
+        "integration",
+        "hotfix",
+        "release",
+        "maintenance",
+        "internal"
+      ],
+      "publicationServices": [
+        "github"
+      ],
+      "remoteRepositories": [],
+      "items": {
+        "hotfix": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "{{#sanitizeLower}}{{branch}}{{/sanitizeLower}}",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-hotfix(([0-9a-zA-Z]*)(\\.([0-9]\\d*))?)?)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^hotfix((-|\\/)[0-9a-zA-Z-_]+)?$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "false"
+        },
+        "integration": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "{{#sanitizeLower}}{{branch}}{{/sanitizeLower}}",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-(develop|development|integration|latest)(\\.([0-9]\\d*))?)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^(develop|development|integration|latest)$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "false"
+        },
+        "internal": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "internal",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "gitPush": "false",
+          "gitTag": "false",
+          "identifiers": [
+            {
+              "qualifier": "{{#sanitizeLower}}{{branch}}{{/sanitizeLower}}",
+              "position": "BUILD"
+            },
+            {
+              "qualifier": "{{#short5}}{{releaseScope.finalCommit}}{{/short5}}",
+              "position": "BUILD"
+            },
+            {
+              "qualifier": "{{#timestampYYYYMMDDHHMMSS}}{{timestamp}}{{/timestampYYYYMMDDHHMMSS}}",
+              "position": "BUILD"
+            }
+          ],
+          "publish": "false"
+        },
+        "mainline": {
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)$",
+          "gitCommit": "true",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^(main)$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "true"
+        },
+        "maintenance": {
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^[a-zA-Z]*([0-9|x]\\d*)(\\.([0-9|x]\\d*)(\\.([0-9|x]\\d*))?)?$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "true",
+          "versionRangeFromBranchName": true
+        },
+        "release": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "{{#firstLower}}{{branch}}{{/firstLower}}",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-(rel|release)((\\.([0-9]\\d*))?)?)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^(rel|release)(-|/)({{configuration.releasePrefix}})?([0-9|x]\\d*)(\\.([0-9|x]\\d*)(\\.([0-9|x]\\d*))?)?$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "false",
+          "versionRangeFromBranchName": true
+        }
+      }
+    },
+    "resume": true,
+    "scheme": "SEMVER",
+    "services": {
+      "github": {
+        "options": {
+          "AUTHENTICATION_TOKEN": "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}",
+          "REPOSITORY_NAME": "nyx-test",
+          "REPOSITORY_OWNER": "alpiquero"
+        },
+        "type": "GITHUB"
+      }
+    },
+    "summary": true,
+    "stateFile": ".nyx-state.json",
+    "verbosity": "INFO"
+  },
+  "coreVersion": true,
+  "directory": "/github/workspace",
+  "internals": {
+    "infer.input.configured.bump": "null",
+    "infer.input.configured.initialVersion": "0.1.0",
+    "infer.input.configured.releaseLenient": "true",
+    "infer.input.configured.releasePrefix": "null",
+    "infer.input.configured.scheme": "SEMVER",
+    "infer.input.configured.version": "null",
+    "infer.input.repository.current.branch": "main",
+    "infer.input.repository.last.commit": "e97bf4ad65e450180d782b34b61d10d8663b668c",
+    "infer.output.state.version": "0.11.2",
+    "make.input.changelog.file": "/github/workspace/CHANGELOG.md",
+    "make.input.repository.current.branch": "main",
+    "make.input.repository.last.commit": "e97bf4ad65e450180d782b34b61d10d8663b668c",
+    "make.input.state.initialCommit": "e97bf4ad65e450180d782b34b61d10d8663b668c",
+    "make.input.state.newVersion": "true",
+    "make.input.version": "0.11.2"
+  },
+  "latestVersion": true,
+  "newVersion": true,
+  "newRelease": true,
+  "releaseAssets": [],
+  "releaseScope": {
+    "commits": [
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687261501000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687261501000,
+            "offset": 120
+          }
+        },
+        "date": 1687261501000,
+        "message": {
+          "fullMessage": "fix: changelog again\n",
+          "shortMessage": "fix: changelog again"
+        },
+        "parents": [
+          "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+        ],
+        "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+      }
+    ],
+    "finalCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687261501000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687261501000,
+          "offset": 120
+        }
+      },
+      "date": 1687261501000,
+      "message": {
+        "fullMessage": "fix: changelog again\n",
+        "shortMessage": "fix: changelog again"
+      },
+      "parents": [
+        "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+      ],
+      "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+    },
+    "initialCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687261501000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687261501000,
+          "offset": 120
+        }
+      },
+      "date": 1687261501000,
+      "message": {
+        "fullMessage": "fix: changelog again\n",
+        "shortMessage": "fix: changelog again"
+      },
+      "parents": [
+        "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+      ],
+      "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+    },
+    "previousVersion": "0.11.1",
+    "previousVersionCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "alpiquero@users.noreply.github.com",
+          "name": "alpiquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687260869000,
+          "offset": 0
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "alpiquero@users.noreply.github.com",
+          "name": "alpiquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687260869000,
+          "offset": 0
+        }
+      },
+      "date": 1687260869000,
+      "message": {
+        "fullMessage": "Release version 0.11.1",
+        "shortMessage": "Release version 0.11.1"
+      },
+      "parents": [
+        "66b94c6750ab8160caf0b316668d406468fcfe35"
+      ],
+      "tags": [
+        {
+          "name": "0.11.1",
+          "target": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+        }
+      ],
+      "sha": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+    },
+    "primeVersion": "0.11.1",
+    "primeVersionCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "alpiquero@users.noreply.github.com",
+          "name": "alpiquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687260869000,
+          "offset": 0
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "alpiquero@users.noreply.github.com",
+          "name": "alpiquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687260869000,
+          "offset": 0
+        }
+      },
+      "date": 1687260869000,
+      "message": {
+        "fullMessage": "Release version 0.11.1",
+        "shortMessage": "Release version 0.11.1"
+      },
+      "parents": [
+        "66b94c6750ab8160caf0b316668d406468fcfe35"
+      ],
+      "tags": [
+        {
+          "name": "0.11.1",
+          "target": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+        }
+      ],
+      "sha": "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+    },
+    "significantCommits": [
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687261501000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687261501000,
+            "offset": 120
+          }
+        },
+        "date": 1687261501000,
+        "message": {
+          "fullMessage": "fix: changelog again\n",
+          "shortMessage": "fix: changelog again"
+        },
+        "parents": [
+          "fd05ea63875988c2ecbded994c3b5f6f166392cf"
+        ],
+        "sha": "e97bf4ad65e450180d782b34b61d10d8663b668c"
+      }
+    ]
+  },
+  "releaseType": {
+    "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+    "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)$",
+    "gitCommit": "true",
+    "gitPush": "true",
+    "gitTag": "true",
+    "matchBranches": "^(main)$",
+    "matchEnvironmentVariables": {
+      "CI": "^true$"
+    },
+    "matchWorkspaceStatus": "CLEAN",
+    "publish": "true"
+  },
+  "scheme": "SEMVER",
+  "timestamp": 1687261523159,
+  "version": "0.11.2"
+}
