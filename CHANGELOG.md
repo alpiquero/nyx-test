@@ -1,8 +1,8 @@
-## [0.24.1](https://github.com/alpiquero/nyx-test/tag/0.24.1) (2023-06-20)
+## [0.25.0-develop.1](https://github.com/alpiquero/nyx-test/tag/0.25.0-develop.1) (2023-06-20)
 
-### Fixed
+### Added
 
-* [[62147](https://github.com/alpiquero/nyx-test/commit/621477548a241ebb4609e9fce5c35944ab05d647)] fix: Release notes generation
- (Angel Luis Piquero, 2023-06-20T16:44:44)
+* [[c84f7](https://github.com/alpiquero/nyx-test/commit/c84f78954b56f7bed32a6ca7b27c26db2baa7eb6)] feat: remove file
+ (Angel Luis Piquero, 2023-06-20T16:58:57)
 
 
