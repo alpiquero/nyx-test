@@ -1,3 +1,11 @@
+## [0.15.1](https://github.com/alpiquero/nyx-test/tag/0.15.1) (2023-06-20)
+
+### Fixed
+
+* [[593f1](https://github.com/alpiquero/nyx-test/commit/593f12d89f502508fc17d9e32719b41272c33c8b)] fix: bump version to publish
+ (Angel Luis Piquero, 2023-06-20T12:55:35)
+
+
 ## [0.15.0](https://github.com/alpiquero/nyx-test/tag/0.15.0) (2023-06-20)
 
 ### Added
