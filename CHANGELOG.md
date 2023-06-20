@@ -1,3 +1,11 @@
+## [0.12.2](https://github.com/alpiquero/nyx-test/tag/0.12.2) (2023-06-20)
+
+### Fixed
+
+* [[72b04](https://github.com/alpiquero/nyx-test/commit/72b0411bdb41f09259320825d876f3ba7c265a50)] fix: add debug mode to publish
+ (Angel Luis Piquero, 2023-06-20T12:09:12)
+
+
 ## [0.12.1](https://github.com/alpiquero/nyx-test/tag/0.12.1) (2023-06-20)
 
 ### Fixed
