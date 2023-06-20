@@ -1,0 +1,647 @@
+{
+  "branch": "main",
+  "bump": "minor",
+  "changelog": {
+    "releases": [
+      {
+        "date": "2023-06-20",
+        "name": "0.10.0",
+        "sections": [
+          {
+            "name": "Added",
+            "commits": [
+              {
+                "authorAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687259644000,
+                    "offset": 120
+                  }
+                },
+                "commitAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687259644000,
+                    "offset": 120
+                  }
+                },
+                "date": 1687259644000,
+                "message": {
+                  "fullMessage": "feat: add gitCommit to mainline releases\n",
+                  "shortMessage": "feat: add gitCommit to mainline releases"
+                },
+                "parents": [
+                  "1187845ce08b54f5d1739f67cf34a69d930e1973"
+                ],
+                "sha": "1b3f4d84059f00174174e64c5b13060ec02db205"
+              },
+              {
+                "authorAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687259539000,
+                    "offset": 120
+                  }
+                },
+                "commitAction": {
+                  "identity": {
+                    "email": "angelluis.piquero@intelygenz.com",
+                    "name": "Angel Luis Piquero"
+                  },
+                  "timeStamp": {
+                    "timeStamp": 1687259539000,
+                    "offset": 120
+                  }
+                },
+                "date": 1687259539000,
+                "message": {
+                  "fullMessage": "feat: update changelog template\n",
+                  "shortMessage": "feat: update changelog template"
+                },
+                "parents": [
+                  "2490724299b97421839f0ce7be820b4904256b2b"
+                ],
+                "sha": "1187845ce08b54f5d1739f67cf34a69d930e1973"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "configuration": {
+    "changelog": {
+      "path": "CHANGELOG.md",
+      "sections": {
+        "Added": "^feat$",
+        "Changed": "^(chore|perf|style|docs)$",
+        "Fixed": "^fix$"
+      },
+      "substitutions": {
+        "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/mooltiverse/nyx/issues/%s)"
+      },
+      "template": "CHANGELOG.tpl"
+    },
+    "commitMessageConventions": {
+      "enabled": [
+        "conventionalCommits"
+      ],
+      "items": {
+        "conventionalCommits": {
+          "expression": "(?m)^(?\u003ctype\u003e[a-zA-Z0-9_]+)(!)?(\\((?\u003cscope\u003e[a-z ]+)\\))?:( (?\u003ctitle\u003e.+))$(?s).*",
+          "bumpExpressions": {
+            "major": "(?s)(?m)^[a-zA-Z0-9_]+(!|.*^(BREAKING( |-)CHANGE: )).*",
+            "minor": "(?s)(?m)^feat(?!!|.*^(BREAKING( |-)CHANGE: )).*",
+            "patch": "(?s)(?m)^fix(?!!|.*^(BREAKING( |-)CHANGE: )).*"
+          }
+        }
+      }
+    },
+    "directory": "/github/workspace",
+    "dryRun": false,
+    "git": {
+      "remotes": {
+        "origin": {
+          "authenticationMethod": "USER_PASSWORD",
+          "user": "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}",
+          "password": "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
+        }
+      }
+    },
+    "initialVersion": "0.1.0",
+    "preset": "simple",
+    "releaseAssets": {},
+    "releaseLenient": true,
+    "releaseTypes": {
+      "enabled": [
+        "mainline",
+        "integration",
+        "hotfix",
+        "release",
+        "maintenance",
+        "internal"
+      ],
+      "publicationServices": [
+        "github"
+      ],
+      "remoteRepositories": [],
+      "items": {
+        "hotfix": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "{{#sanitizeLower}}{{branch}}{{/sanitizeLower}}",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-hotfix(([0-9a-zA-Z]*)(\\.([0-9]\\d*))?)?)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^hotfix((-|\\/)[0-9a-zA-Z-_]+)?$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "false"
+        },
+        "integration": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "{{#sanitizeLower}}{{branch}}{{/sanitizeLower}}",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-(develop|development|integration|latest)(\\.([0-9]\\d*))?)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^(develop|development|integration|latest)$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "false"
+        },
+        "internal": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "internal",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "gitPush": "false",
+          "gitTag": "false",
+          "identifiers": [
+            {
+              "qualifier": "{{#sanitizeLower}}{{branch}}{{/sanitizeLower}}",
+              "position": "BUILD"
+            },
+            {
+              "qualifier": "{{#short5}}{{releaseScope.finalCommit}}{{/short5}}",
+              "position": "BUILD"
+            },
+            {
+              "qualifier": "{{#timestampYYYYMMDDHHMMSS}}{{timestamp}}{{/timestampYYYYMMDDHHMMSS}}",
+              "position": "BUILD"
+            }
+          ],
+          "publish": "false"
+        },
+        "mainline": {
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)$",
+          "gitCommit": "true",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^(main)$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "true"
+        },
+        "maintenance": {
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^[a-zA-Z]*([0-9|x]\\d*)(\\.([0-9|x]\\d*)(\\.([0-9|x]\\d*))?)?$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "true",
+          "versionRangeFromBranchName": true
+        },
+        "release": {
+          "collapseVersions": true,
+          "collapsedVersionQualifier": "{{#firstLower}}{{branch}}{{/firstLower}}",
+          "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+          "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)(-(rel|release)((\\.([0-9]\\d*))?)?)$",
+          "gitPush": "true",
+          "gitTag": "true",
+          "matchBranches": "^(rel|release)(-|/)({{configuration.releasePrefix}})?([0-9|x]\\d*)(\\.([0-9|x]\\d*)(\\.([0-9|x]\\d*))?)?$",
+          "matchEnvironmentVariables": {
+            "CI": "^true$"
+          },
+          "matchWorkspaceStatus": "CLEAN",
+          "publish": "false",
+          "versionRangeFromBranchName": true
+        }
+      }
+    },
+    "resume": true,
+    "scheme": "SEMVER",
+    "services": {
+      "github": {
+        "options": {
+          "AUTHENTICATION_TOKEN": "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}",
+          "REPOSITORY_NAME": "nyx-test",
+          "REPOSITORY_OWNER": "alpiquero"
+        },
+        "type": "GITHUB"
+      }
+    },
+    "summary": true,
+    "stateFile": ".nyx-state.json",
+    "verbosity": "INFO"
+  },
+  "coreVersion": true,
+  "directory": "/github/workspace",
+  "internals": {
+    "infer.input.configured.bump": "null",
+    "infer.input.configured.initialVersion": "0.1.0",
+    "infer.input.configured.releaseLenient": "true",
+    "infer.input.configured.releasePrefix": "null",
+    "infer.input.configured.scheme": "SEMVER",
+    "infer.input.configured.version": "null",
+    "infer.input.repository.current.branch": "main",
+    "infer.input.repository.last.commit": "498cd4dde979ed034da5108ce24b5c8943c8086a",
+    "infer.output.state.version": "0.10.0",
+    "make.input.changelog.file": "/github/workspace/CHANGELOG.md",
+    "make.input.repository.current.branch": "main",
+    "make.input.repository.last.commit": "498cd4dde979ed034da5108ce24b5c8943c8086a",
+    "make.input.state.initialCommit": "2490724299b97421839f0ce7be820b4904256b2b",
+    "make.input.state.newVersion": "true",
+    "make.input.version": "0.10.0"
+  },
+  "latestVersion": true,
+  "newVersion": true,
+  "newRelease": true,
+  "releaseAssets": [],
+  "releaseScope": {
+    "commits": [
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687260565000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687260565000,
+            "offset": 120
+          }
+        },
+        "date": 1687260565000,
+        "message": {
+          "fullMessage": "ci: fix git author\n",
+          "shortMessage": "ci: fix git author"
+        },
+        "parents": [
+          "a1b172eedf42075aac13ae4b6b4c8f9e36046194"
+        ],
+        "sha": "498cd4dde979ed034da5108ce24b5c8943c8086a"
+      },
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687260067000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687260067000,
+            "offset": 120
+          }
+        },
+        "date": 1687260067000,
+        "message": {
+          "fullMessage": "ci: move changelog\n",
+          "shortMessage": "ci: move changelog"
+        },
+        "parents": [
+          "1b3f4d84059f00174174e64c5b13060ec02db205"
+        ],
+        "sha": "a1b172eedf42075aac13ae4b6b4c8f9e36046194"
+      },
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259644000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259644000,
+            "offset": 120
+          }
+        },
+        "date": 1687259644000,
+        "message": {
+          "fullMessage": "feat: add gitCommit to mainline releases\n",
+          "shortMessage": "feat: add gitCommit to mainline releases"
+        },
+        "parents": [
+          "1187845ce08b54f5d1739f67cf34a69d930e1973"
+        ],
+        "sha": "1b3f4d84059f00174174e64c5b13060ec02db205"
+      },
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259539000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259539000,
+            "offset": 120
+          }
+        },
+        "date": 1687259539000,
+        "message": {
+          "fullMessage": "feat: update changelog template\n",
+          "shortMessage": "feat: update changelog template"
+        },
+        "parents": [
+          "2490724299b97421839f0ce7be820b4904256b2b"
+        ],
+        "sha": "1187845ce08b54f5d1739f67cf34a69d930e1973"
+      },
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687255780000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687255780000,
+            "offset": 120
+          }
+        },
+        "date": 1687255780000,
+        "message": {
+          "fullMessage": "ci: add release scritps\n",
+          "shortMessage": "ci: add release scritps"
+        },
+        "parents": [
+          "e4dd988c8c3d9b8c3dbdf3ca195f3fe92d890912"
+        ],
+        "sha": "2490724299b97421839f0ce7be820b4904256b2b"
+      }
+    ],
+    "finalCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687260565000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687260565000,
+          "offset": 120
+        }
+      },
+      "date": 1687260565000,
+      "message": {
+        "fullMessage": "ci: fix git author\n",
+        "shortMessage": "ci: fix git author"
+      },
+      "parents": [
+        "a1b172eedf42075aac13ae4b6b4c8f9e36046194"
+      ],
+      "sha": "498cd4dde979ed034da5108ce24b5c8943c8086a"
+    },
+    "initialCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687255780000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687255780000,
+          "offset": 120
+        }
+      },
+      "date": 1687255780000,
+      "message": {
+        "fullMessage": "ci: add release scritps\n",
+        "shortMessage": "ci: add release scritps"
+      },
+      "parents": [
+        "e4dd988c8c3d9b8c3dbdf3ca195f3fe92d890912"
+      ],
+      "sha": "2490724299b97421839f0ce7be820b4904256b2b"
+    },
+    "previousVersion": "0.9.0",
+    "previousVersionCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687255709000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687255709000,
+          "offset": 120
+        }
+      },
+      "date": 1687255709000,
+      "message": {
+        "fullMessage": "feat: add helm chart here\n",
+        "shortMessage": "feat: add helm chart here"
+      },
+      "parents": [
+        "0701c935b7f72f7439deb5cb5d5eaf325b496581"
+      ],
+      "tags": [
+        {
+          "name": "0.9.0",
+          "target": "e4dd988c8c3d9b8c3dbdf3ca195f3fe92d890912"
+        }
+      ],
+      "sha": "e4dd988c8c3d9b8c3dbdf3ca195f3fe92d890912"
+    },
+    "primeVersion": "0.9.0",
+    "primeVersionCommit": {
+      "authorAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687255709000,
+          "offset": 120
+        }
+      },
+      "commitAction": {
+        "identity": {
+          "email": "angelluis.piquero@intelygenz.com",
+          "name": "Angel Luis Piquero"
+        },
+        "timeStamp": {
+          "timeStamp": 1687255709000,
+          "offset": 120
+        }
+      },
+      "date": 1687255709000,
+      "message": {
+        "fullMessage": "feat: add helm chart here\n",
+        "shortMessage": "feat: add helm chart here"
+      },
+      "parents": [
+        "0701c935b7f72f7439deb5cb5d5eaf325b496581"
+      ],
+      "tags": [
+        {
+          "name": "0.9.0",
+          "target": "e4dd988c8c3d9b8c3dbdf3ca195f3fe92d890912"
+        }
+      ],
+      "sha": "e4dd988c8c3d9b8c3dbdf3ca195f3fe92d890912"
+    },
+    "significantCommits": [
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259644000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259644000,
+            "offset": 120
+          }
+        },
+        "date": 1687259644000,
+        "message": {
+          "fullMessage": "feat: add gitCommit to mainline releases\n",
+          "shortMessage": "feat: add gitCommit to mainline releases"
+        },
+        "parents": [
+          "1187845ce08b54f5d1739f67cf34a69d930e1973"
+        ],
+        "sha": "1b3f4d84059f00174174e64c5b13060ec02db205"
+      },
+      {
+        "authorAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259539000,
+            "offset": 120
+          }
+        },
+        "commitAction": {
+          "identity": {
+            "email": "angelluis.piquero@intelygenz.com",
+            "name": "Angel Luis Piquero"
+          },
+          "timeStamp": {
+            "timeStamp": 1687259539000,
+            "offset": 120
+          }
+        },
+        "date": 1687259539000,
+        "message": {
+          "fullMessage": "feat: update changelog template\n",
+          "shortMessage": "feat: update changelog template"
+        },
+        "parents": [
+          "2490724299b97421839f0ce7be820b4904256b2b"
+        ],
+        "sha": "1187845ce08b54f5d1739f67cf34a69d930e1973"
+      }
+    ]
+  },
+  "releaseType": {
+    "description": "{{#fileContent}}CHANGELOG.md{{/fileContent}}",
+    "filterTags": "^({{configuration.releasePrefix}})?([0-9]\\d*)\\.([0-9]\\d*)\\.([0-9]\\d*)$",
+    "gitCommit": "true",
+    "gitPush": "true",
+    "gitTag": "true",
+    "matchBranches": "^(main)$",
+    "matchEnvironmentVariables": {
+      "CI": "^true$"
+    },
+    "matchWorkspaceStatus": "CLEAN",
+    "publish": "true"
+  },
+  "scheme": "SEMVER",
+  "timestamp": 1687260587201,
+  "version": "0.10.0"
+}
