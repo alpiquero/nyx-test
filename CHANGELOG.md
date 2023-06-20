@@ -1,3 +1,11 @@
+## [0.14.0](https://github.com/alpiquero/nyx-test/tag/0.14.0) (2023-06-20)
+
+### Added
+
+* [[fdd14](https://github.com/alpiquero/nyx-test/commit/fdd14f5c29930baeb7a1b34afdd75d7c0735651b)] feat: commit generated files
+ (Angel Luis Piquero, 2023-06-20T12:43:14)
+
+
 ## [0.12.2](https://github.com/alpiquero/nyx-test/tag/0.12.2) (2023-06-20)
 
 ### Fixed
