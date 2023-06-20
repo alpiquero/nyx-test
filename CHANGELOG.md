@@ -1,3 +1,11 @@
+## [0.23.0-develop.4](https://github.com/alpiquero/nyx-test/tag/0.23.0-develop.4) (2023-06-20)
+
+### Fixed
+
+* [[464e6](https://github.com/alpiquero/nyx-test/commit/464e60fa89c69dff3d9665d7dc11426c5611caa0)] fix: remove unused comments
+ (Angel Luis Piquero, 2023-06-20T16:30:13)
+
+
 ## [0.22.0](https://github.com/alpiquero/nyx-test/tag/0.22.0) (2023-06-20)
 
 ### Added

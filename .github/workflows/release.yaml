@@ -36,14 +36,9 @@ jobs:
         ./scripts/publish.sh ${{ steps.nyx-infer.outputs.version }}
 
     - name: Move CHANGELOG.md to increment
-      if: steps.nyx-infer.outputs.newRelease == 'true'
+      if: steps.nyx-infer.outputs.newVersion == 'true'
       run: |
         mv CHANGELOG.md changelog.old || true
-
-    - name: Restore CHANGELOG.md
-      if: steps.nyx-infer.outputs.newRelease == 'false'
-      run: |
-        git restore CHANGELOG.md
 
     - name: Nyx publish
       id: nyx-publish

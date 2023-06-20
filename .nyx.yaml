@@ -126,4 +126,3 @@ services:
 resume: true
 stateFile: ".nyx-state.json"
 summaryFile: '.nyx-summary.txt'
-
