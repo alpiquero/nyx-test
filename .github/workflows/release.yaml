@@ -42,21 +42,6 @@ jobs:
       run: |
         mv CHANGELOG.md changelog.old || true
 
-    - name: Generate Artifacts with Nyx
-      uses: mooltiverse/nyx-github-action@main
-      with:
-        command: make
-      env:
-        NYX_VERBOSITY: 'INFO'
-
-    - name: Mark Artifacts with Nyx
-      uses: mooltiverse/nyx-github-action@main
-      with:
-        command: mark
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NYX_VERBOSITY: 'INFO'
-
     - name: Nyx publish
       id: nyx
       uses: mooltiverse/nyx-github-action@main
@@ -65,4 +50,4 @@ jobs:
         NYX_VERBOSITY: 'INFO'
       with:
         command: 'publish'
-        bump: steps.nyx-infer.outputs.bump
+        bump: ${{ steps.nyx-infer.outputs.bump }}
