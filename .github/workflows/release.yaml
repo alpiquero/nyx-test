@@ -32,10 +32,6 @@ jobs:
       if: steps.nyx-infer.outputs.newVersion == 'true'
       run: |
         ./scripts/publish.sh ${{ steps.nyx-infer.outputs.version }}
-        echo "VALUES"
-        cat helm/workflow-poc/values.yaml
-        echo "CHAT"
-        cat helm/workflow-poc/Chart.yaml
 
     - name: Move CHANGELOG.md to increment
       if: github.ref_name == 'main'
