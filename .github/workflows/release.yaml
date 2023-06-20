@@ -38,7 +38,7 @@ jobs:
         ./scripts/publish.sh ${{ steps.nyx-infer.outputs.version }}
 
     - name: Move CHANGELOG.md to increment
-      if: github.ref_name == 'main'
+      if: steps.nyx-infer.outputs.newRelease == 'true'
       run: |
         mv CHANGELOG.md changelog.old || true
 
