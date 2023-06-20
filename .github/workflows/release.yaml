@@ -42,6 +42,11 @@ jobs:
       run: |
         mv CHANGELOG.md changelog.old || true
 
+    - name: Restore CHANGELOG.md
+      if: steps.nyx-infer.outputs.newRelease == 'false'
+      run: |
+        git restore CHANGELOG.md
+
     - name: Nyx publish
       id: nyx-publish
       uses: mooltiverse/nyx-github-action@main

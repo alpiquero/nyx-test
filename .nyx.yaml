@@ -54,6 +54,7 @@ releaseTypes:
         CI: "^true$"                 # only match this release type when running on CI servers
       matchWorkspaceStatus: "CLEAN"  # only match this release type when the repository is clean
       publish: "false"
+      
     hotfix:
       description: "{{#fileContent}}CHANGELOG.md{{/fileContent}}"
       collapseVersions: true
