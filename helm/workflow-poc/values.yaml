@@ -1,0 +1,25 @@
+# Default values for workflow-poc.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+package1:
+  image:
+    repository: nginx
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "develop"
+  hello: world
+  new: this
+  more: features
+  other: fix
+package2:
+  image:
+    repository: nginx
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "develop"
+  hello: world
+  new: this
+  other: value
+  fix: value
+  next: value
+  this: value
