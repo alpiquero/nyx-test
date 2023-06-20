@@ -1,3 +1,16 @@
+## [0.17.0](https://github.com/alpiquero/nyx-test/tag/0.17.0) (2023-06-20)
+
+### Changed
+
+* [[29184](https://github.com/alpiquero/nyx-test/commit/291849be852271a91df69d5dddb991833b3598bf)] chore: update gitignore
+ (Angel Luis Piquero, 2023-06-20T13:23:17)
+
+### Added
+
+* [[1c04b](https://github.com/alpiquero/nyx-test/commit/1c04bfcbc3e6a7b0f9d41473998414135db6e72a)] feat: add summary
+ (Angel Luis Piquero, 2023-06-20T13:22:10)
+
+
 ## [0.16.0](https://github.com/alpiquero/nyx-test/tag/0.16.0) (2023-06-20)
 
 ### Added
