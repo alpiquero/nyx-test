@@ -2,6 +2,9 @@
 
 ### Added
 
+* [[5e09a](https://github.com/alpiquero/nyx-test/commit/5e09a21cf992709285de4f393a219618f231f219)] feat: add summary
+ (Angel Luis Piquero, 2023-06-20T13:15:12)
+
 * [[7f7e9](https://github.com/alpiquero/nyx-test/commit/7f7e986bdfe5e65e1a189f642f0e4317f49dd3d3)] feat: restore
  (Angel Luis Piquero, 2023-06-20T13:14:30)
 
