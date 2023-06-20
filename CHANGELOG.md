@@ -1,3 +1,11 @@
+## [0.22.0](https://github.com/alpiquero/nyx-test/tag/0.22.0) (2023-06-20)
+
+### Added
+
+* [[cf390](https://github.com/alpiquero/nyx-test/commit/cf3905af4a96ffb04c575393b8db4007accab8ff)] feat: remove comments and commit on non mainline branches
+ (Angel Luis Piquero, 2023-06-20T15:12:49)
+
+
 ## [0.21.0](https://github.com/alpiquero/nyx-test/tag/0.21.0) (2023-06-20)
 
 ### Added
