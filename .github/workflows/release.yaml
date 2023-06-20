@@ -28,6 +28,15 @@ jobs:
       env:
         NYX_VERBOSITY: 'INFO'
 
+    - name: Bump chart versions
+      if: steps.nyx-infer.outputs.newVersion == 'true'
+      run: |
+        ./scripts/publish.sh ${{ steps.nyx-infer.outputs.version }}
+        echo "VALUES"
+        cat helm/workflow-poc/values.yaml
+        echo "CHAT"
+        cat helm/workflow-poc/Chart.yaml
+
     - name: Move CHANGELOG.md to increment
       if: github.ref_name == 'main'
       run: |
@@ -53,6 +62,6 @@ jobs:
       uses: mooltiverse/nyx-github-action@main
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NYX_VERBOSITY: 'DEBUG'
+        NYX_VERBOSITY: 'INFO'
       with:
         command: 'publish'
