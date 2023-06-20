@@ -1,5 +1,3 @@
-# Nyx Changelog
-
 {{#releases}}
 ## [{{name}}](https://github.com/alpiquero/nyx-test/tag/{{name}}) ({{date}})
 
