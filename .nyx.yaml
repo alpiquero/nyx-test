@@ -120,4 +120,5 @@ services:
       REPOSITORY_OWNER: "alpiquero"
 resume: true
 stateFile: ".nyx-state.json"
+summaryFile: '.nyx-summary.txt'
 
