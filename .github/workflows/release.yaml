@@ -35,10 +35,20 @@ jobs:
       run: |
         ./scripts/publish.sh ${{ steps.nyx-infer.outputs.version }}
 
-    - name: Move CHANGELOG.md to increment
+    - name: Nyx make
+      uses: mooltiverse/nyx-github-action@main
+      if: steps.nyx-infer.outputs.newVersion == 'true'
+      with:
+        command: 'make'
+      env:
+        NYX_VERBOSITY: 'INFO'
+
+    - name: Update release notes
       if: steps.nyx-infer.outputs.newVersion == 'true'
       run: |
-        mv CHANGELOG.md changelog.old || true
+        mv RELEASE_NOTES.md RELEASE_NOTES.old
+        cat CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
+        rm RELEASE_NOTES.old
 
     - name: Nyx publish
       id: nyx-publish
