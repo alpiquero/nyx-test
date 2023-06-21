@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NYX_VERBOSITY: 'INFO'
+      CHANGELOG_PATH: ${RUNNER_TEMP}/CHANGELOG.md
 
     outputs:
       newRelease: ${{ steps.nyx-publish.outputs.newRelease }}
@@ -47,7 +48,7 @@ jobs:
       if: steps.nyx-infer.outputs.newRelease == 'true' && steps.nyx-infer.outputs.coreVersion == 'true'
       run: |
         mv RELEASE_NOTES.md RELEASE_NOTES.old
-        cat CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
+        cat ${RUNNER_TEMP} RELEASE_NOTES.old >> RELEASE_NOTES.md
         rm RELEASE_NOTES.old
 
     - name: Nyx publish

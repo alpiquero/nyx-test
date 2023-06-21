@@ -10,7 +10,7 @@ git:
       user: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
       password: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
 changelog:
-  path: "CHANGELOG.md"
+  path: "{{#environmentVariable}}CHANGELOG_PATH{{/environmentVariable}}"
   template: "CHANGELOG.tpl"
   sections:
     "Added": "^feat$"
