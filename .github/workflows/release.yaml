@@ -23,8 +23,8 @@ jobs:
 
     - name: Configure Git
       run: |
-        git config --global user.name "$GITHUB_ACTOR"
-        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
     - name: Run nyx Infer
       id: nyx-infer
@@ -88,6 +88,8 @@ jobs:
     - name: Update chart repository
       if: steps.nyx-infer.outputs.newRelease == 'true'
       run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
         helm repo index --url  https://github.com/alpiquero/nyx-test/download/${{ needs.release-version.outputs.version }}/ --merge index.yaml .
         git add index.yaml
         git commit -m "Update index.yaml"
