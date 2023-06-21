@@ -59,19 +59,32 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  publish-chart:
+    name: Publish the chart
+    runs-on: ubuntu-latest
+    needs: release-version
+   
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
     - name: Install Chart Releaser
-      if: steps.nyx-infer.outputs.newRelease == 'true'
       uses: helm/chart-releaser-action@v1.5.0
       with:
         install_only: true
         version: v1.5.0
     
     - name: Get repository name
-      if: steps.nyx-infer.outputs.newRelease == 'true'
       run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
 
     - name: Publish chart
-      if: steps.nyx-infer.outputs.newRelease == 'true'
       run: ./scripts/release_chart.sh
       env:
         REPOSITORY_OWNER: ${{ github.repository_owner }}
