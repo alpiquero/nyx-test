@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NYX_VERBOSITY: 'INFO'
-      CHANGELOG_PATH: '/tmp/CHANGELOG.md'
+      CHANGELOG_PATH: '${{ runner.temp }}/CHANGELOG.md'
 
     outputs:
       newRelease: ${{ steps.nyx-publish.outputs.newRelease }}
