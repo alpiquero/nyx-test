@@ -14,6 +14,7 @@ jobs:
 
     outputs:
       newRelease: ${{ steps.nyx-publish.outputs.newRelease }}
+      version: ${{ steps.nyx-publish.outputs.version }}
     steps:
     - name: Git checkout
       uses: actions/checkout@v3
@@ -89,12 +90,13 @@ jobs:
     
     - name: Run Helm index
       run: |
-        helm repo index --url https://alpiquero.github.io/nyx-test/ --merge index.yaml .
+        helm repo index --url  https://github.com/alpiquero/nyx-test/download/${{ needs.release-version.outputs.version }}/ --merge index.yaml .
 
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "Update index.yaml"
-        commit_user_name: ${{ env.GITHUB_ACTOR }}
-        commit_user_email: "${{ env.GITHUB_ACTOR }}@users.noreply.github.com"
+        commit_user_name: ${{ vars.GITHUB_ACTOR }}
+        commit_user_email: "${{ vars.GITHUB_ACTOR }}@users.noreply.github.com"
         file_pattern: "index.yaml"
+        skip_checkout: true
