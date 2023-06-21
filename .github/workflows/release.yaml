@@ -63,6 +63,7 @@ jobs:
     name: Publish the chart
     runs-on: ubuntu-latest
     needs: release-version
+    if: needs.release-version.outputs.newRelease == 'true'
    
     steps:
     - name: Checkout
