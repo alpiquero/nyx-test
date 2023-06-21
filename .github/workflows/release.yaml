@@ -57,7 +57,11 @@ jobs:
         command: 'publish'
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     
+    # Nyx commits all new files that exist in the workspace.
+    # As we only want to upload the packaged chart file to the current release,
+    # we need to do it after the new release has been published
     - name: Package chart
       if: steps.nyx-infer.outputs.newRelease == 'true'
       run: |
@@ -70,35 +74,23 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         file: "workflow-poc-${{ steps.nyx-infer.outputs.version }}.tgz"
-        tag_name: "${{ steps.nyx-infer.outputs.version }}"  
-  # publish-chart:
-  #   name: Publish the chart
-  #   runs-on: ubuntu-latest
-  #   needs: release-version
-  #   if: needs.release-version.outputs.newRelease == 'true'
-  #   steps:
-  #   - name: Checkout
-  #     uses: actions/checkout@v3
-  #     with:
-  #       fetch-depth: 0
+        tag_name: "${{ steps.nyx-infer.outputs.version }}"
 
-  #   - name: Configure Git
-  #     run: |
-  #       git config user.name "$GITHUB_ACTOR"
-  #       git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
-  #   - name: Install Chart Releaser
-  #     uses: helm/chart-releaser-action@v1.5.0
-  #     with:
-  #       install_only: true
-  #       version: v1.5.0
+  publish-chart:
+    name: Publish the chart
+    runs-on: ubuntu-latest
+    needs: release-version
+    if: needs.release-version.outputs.newRelease == 'true'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: 'gh-pages'
     
-  #   - name: Get repository name
-  #     run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+    - name: Run Helm index
+      run: |
+        helm repo index --url https://alpiquero.github.io/nyx-test/ --merge index.yaml .
 
-  #   - name: Publish chart
-  #     run: ./scripts/release_chart.sh
-  #     env:
-  #       REPOSITORY_OWNER: ${{ github.repository_owner }}
-  #       REPOSITORY_NAME: ${{ env.REPOSITORY_NAME }}
-  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      
