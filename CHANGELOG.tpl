@@ -19,3 +19,5 @@ No changes.
 {{^releases}}
 No releases.
 {{/releases}}
+
+Also check out the [release notes](https://github.com/alpiquero/nyx-test/blob/main/RELEASE_NOTES.md).
