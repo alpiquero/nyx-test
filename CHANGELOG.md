@@ -1,7 +1,7 @@
-## [0.32.1](https://github.com/alpiquero/nyx-test/tag/0.32.1) (2023-06-21)
+## [0.32.2](https://github.com/alpiquero/nyx-test/tag/0.32.2) (2023-06-21)
 
 ### Fixed
 
-* [[c7756](https://github.com/alpiquero/nyx-test/commit/c7756375c44ad12e0456a95ae6e64ba70fbd0c28)] fix: cr
- (Angel Luis Piquero, 2023-06-21T13:23:18)
+* [[a67e3](https://github.com/alpiquero/nyx-test/commit/a67e3ad5a5dcba19bc4cfed1b2b085e730afce0f)] fix: cr2
+ (Angel Luis Piquero, 2023-06-21T13:25:14)
 
