@@ -1,7 +1,7 @@
-## [0.32.0](https://github.com/alpiquero/nyx-test/tag/0.32.0) (2023-06-21)
+## [0.32.1](https://github.com/alpiquero/nyx-test/tag/0.32.1) (2023-06-21)
 
-### Added
+### Fixed
 
-* [[33533](https://github.com/alpiquero/nyx-test/commit/335335a9534fda2acea75b0866b995262dec1147)] feat: use cr again
- (Angel Luis Piquero, 2023-06-21T13:19:22)
+* [[c7756](https://github.com/alpiquero/nyx-test/commit/c7756375c44ad12e0456a95ae6e64ba70fbd0c28)] fix: cr
+ (Angel Luis Piquero, 2023-06-21T13:23:18)
 
