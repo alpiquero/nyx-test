@@ -1,9 +1,9 @@
-## [0.26.2](https://github.com/alpiquero/nyx-test/tag/0.26.2) (2023-06-21)
+## [0.27.0](https://github.com/alpiquero/nyx-test/tag/0.27.0) (2023-06-21)
 
-### Fixed
+### Added
 
-* [[510ec](https://github.com/alpiquero/nyx-test/commit/510eca361d7c4685ea6a2410bfa7465295705236)] fix: again
- (Angel Luis Piquero, 2023-06-21T09:07:03)
+* [[1165d](https://github.com/alpiquero/nyx-test/commit/1165d1b00dd422e03332c3e6b1e0a8134399d741)] feat: upload packaged chart
+ (Angel Luis Piquero, 2023-06-21T11:24:13)
 
 
 Also check out the [release notes](https://github.com/alpiquero/nyx-test/blob/main/RELEASE_NOTES.md).
