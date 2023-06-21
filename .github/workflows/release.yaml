@@ -74,7 +74,7 @@ jobs:
       if: steps.nyx-infer.outputs.newRelease == 'true'
       run: |
         helm package -u helm/workflow-poc
-        cp workflow-poc-${{ steps.nyx-infer.outputs.version }}.tgz /gh-pages/
+        cp workflow-poc-${{ steps.nyx-infer.outputs.version }}.tgz gh-pages/
     
     - name: Upload chart to release
       if: steps.nyx-infer.outputs.newRelease == 'true'
