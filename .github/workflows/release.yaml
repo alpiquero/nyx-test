@@ -77,27 +77,17 @@ jobs:
         file: "workflow-poc-${{ steps.nyx-infer.outputs.version }}.tgz"
         tag_name: "${{ steps.nyx-infer.outputs.version }}"
 
-  publish-chart:
-    name: Publish the chart
-    runs-on: ubuntu-latest
-    needs: release-version
-    if: needs.release-version.outputs.newRelease == 'true'
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        ref: 'gh-pages'
-    
     - name: Run Helm index
+      if: steps.nyx-infer.outputs.newRelease == 'true'
       run: |
         helm repo index --url  https://github.com/alpiquero/nyx-test/download/${{ needs.release-version.outputs.version }}/ --merge index.yaml .
 
     - name: Commit changes
+      if: steps.nyx-infer.outputs.newRelease == 'true'
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "Update index.yaml"
         commit_user_name: "${{ github.actor }}"
         commit_user_email: "${{ github.actor }}@users.noreply.github.com"
         file_pattern: "index.yaml"
-        branch: "gh-pages"
-        skip_checkout: true
+        branch: gh-pages 
