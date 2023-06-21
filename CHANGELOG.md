@@ -1,7 +1,7 @@
-## [0.33.1](https://github.com/alpiquero/nyx-test/tag/0.33.1) (2023-06-21)
+## [0.33.2](https://github.com/alpiquero/nyx-test/tag/0.33.2) (2023-06-21)
 
 ### Fixed
 
-* [[2474a](https://github.com/alpiquero/nyx-test/commit/2474a64b8563ad13ca2567baa466bcb59be53792)] fix: again
- (Angel Luis Piquero, 2023-06-21T13:30:09)
+* [[c71e3](https://github.com/alpiquero/nyx-test/commit/c71e34b2d99b191afe74803e08bff2f22b369db3)] fix: againasda
+ (Angel Luis Piquero, 2023-06-21T13:31:52)
 
