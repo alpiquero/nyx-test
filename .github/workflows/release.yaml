@@ -47,9 +47,8 @@ jobs:
       if: steps.nyx-infer.outputs.newRelease == 'true' && steps.nyx-infer.outputs.coreVersion == 'true'
       run: |
         mv RELEASE_NOTES.md RELEASE_NOTES.old
-        cat /tmp/CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
+        cat CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
         rm RELEASE_NOTES.old
-
 
     - name: Nyx publish
       id: nyx-publish
