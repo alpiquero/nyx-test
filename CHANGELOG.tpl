@@ -19,5 +19,3 @@ No changes.
 {{^releases}}
 No releases.
 {{/releases}}
-
-{{#fileContent}}changelog.old{{/fileContent}}
