@@ -30,9 +30,6 @@ jobs:
       uses: mooltiverse/nyx-github-action@main
       with:
         command: infer
-      env:
-        CHANGELOG_PATH: /tmp/CHANGELOG.md'
-
 
     - name: Bump chart versions
       if: steps.nyx-infer.outputs.newVersion == 'true'
@@ -44,18 +41,14 @@ jobs:
       if: steps.nyx-infer.outputs.newVersion == 'true'
       with:
         command: 'make'
-      env:
-        CHANGELOG_PATH: /tmp/CHANGELOG.md'
 
     # We only generate the release notes when a new release is published and it is a core version.
     - name: Update release notes
       if: steps.nyx-infer.outputs.newRelease == 'true' && steps.nyx-infer.outputs.coreVersion == 'true'
       run: |
         mv RELEASE_NOTES.md RELEASE_NOTES.old
-        cat ${CHANGELOG_PATH} RELEASE_NOTES.old >> RELEASE_NOTES.md
+        cat /tmp/CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
         rm RELEASE_NOTES.old
-      env:
-        CHANGELOG_PATH: /tmp/CHANGELOG.md'
 
 
     - name: Nyx publish
@@ -65,7 +58,6 @@ jobs:
         command: 'publish'
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CHANGELOG_PATH: /tmp/CHANGELOG.md'
   
   publish-chart:
     name: Publish the chart
