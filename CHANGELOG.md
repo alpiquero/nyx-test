@@ -1,10 +1,15 @@
-## [0.30.6](https://github.com/alpiquero/nyx-test/tag/0.30.6) (2023-06-21)
+## [0.31.0](https://github.com/alpiquero/nyx-test/tag/0.31.0) (2023-06-21)
+
+### Added
+
+* [[231a3](https://github.com/alpiquero/nyx-test/commit/231a3359b71b13c566afd8c49d39065fc16b8c9b)] feat: create file again
+ (Angel Luis Piquero, 2023-06-21T13:08:22)
+
+* [[ff5c1](https://github.com/alpiquero/nyx-test/commit/ff5c1854067056005abeddbc696910223d341f19)] feat: create test file
+ (Angel Luis Piquero, 2023-06-21T13:08:22)
 
 ### Fixed
 
-* [[2873b](https://github.com/alpiquero/nyx-test/commit/2873b56bf513dd387fb2a11b17f189ac078b75d6)] fix: asdasdasd
- (Angel Luis Piquero, 2023-06-21T13:02:43)
-
-* [[3c791](https://github.com/alpiquero/nyx-test/commit/3c791f00460f91307ac5c2163fbeb64dd9b0e45c)] fix: asdasd
- (Angel Luis Piquero, 2023-06-21T13:01:04)
+* [[0910e](https://github.com/alpiquero/nyx-test/commit/0910ef106686bc5df91c804fdc7a98036d322c0c)] fix: remove file
+ (Angel Luis Piquero, 2023-06-21T13:08:22)
 
