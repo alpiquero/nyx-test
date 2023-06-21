@@ -8,8 +8,6 @@ package1:
     # Overrides the image tag whose default is the chart appVersion.
     tag: "0.34.0"
   hello: world
-  new: this
-  more: features
   other: fixasda
 package2:
   image:
