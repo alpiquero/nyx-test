@@ -27,12 +27,14 @@ jobs:
       version: ${{ steps.nyx-publish.outputs.version }}
 
     steps:
-    - uses: ahmadnassri/action-workflow-run-wait@v1
-
     - name: Git checkout
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
+
+    - uses: ahmadnassri/action-workflow-run-wait@v1
+      with:
+        timeout: 18000000 # Miliseconds
 
     - name: Configure Git
       run: |
