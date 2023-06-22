@@ -7,6 +7,8 @@ on:
       - Fake test 1
       - Fake test 2
       - Fake test 3
+  workflow_dispatch:
+    
       
 # Avoid running multiple pipelines concurrently to avoid overlapping releases and tags
 concurrency:
@@ -26,7 +28,7 @@ jobs:
 
     steps:
     - uses: ahmadnassri/action-workflow-run-wait@v1
-    
+
     - name: Git checkout
       uses: actions/checkout@v3
       with:
