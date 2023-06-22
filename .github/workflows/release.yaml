@@ -8,10 +8,10 @@ on:
       - Fake test 2
       - Fake test 3
     branches:
-      - main
-      - develop
-      - release/*
-      - hotfix/*
+      - 'main'
+      - 'develop'
+      - 'release/**'
+      - 'hotfix/**'
   workflow_dispatch:    
       
 # Avoid running multiple pipelines concurrently to avoid overlapping releases and tags
@@ -31,6 +31,9 @@ jobs:
       version: ${{ steps.nyx-publish.outputs.version }}
 
     steps:
+    - name: Print workflow run event branch
+      run: echo "${{ github.events.workflow_run.head_branch }}"
+      
     - name: Git checkout
       uses: actions/checkout@v3
       with:
