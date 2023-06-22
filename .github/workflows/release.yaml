@@ -44,6 +44,8 @@ jobs:
       with:
         timeout: 18000000 # Miliseconds
         ignore-cancelled: true
+        sha: ${{ github.event.workflow_run.head_sha }}
+
 
     - name: Configure Git
       run: |
