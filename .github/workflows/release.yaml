@@ -39,19 +39,20 @@ jobs:
 
     - name: Nyx make
       uses: mooltiverse/nyx-github-action@main
-      if: steps.nyx-infer.outputs.newVersion == 'true'
+      if: steps.nyx-infer.outputs.newRelease == 'true'
       with:
         command: 'make'
 
     # We only generate the release notes when a new release is published and it is a core version.
     - name: Generate release notes
-      if: steps.nyx-infer.outputs.newRelease == 'true' && steps.nyx-infer.outputs.coreVersion == 'true'
+      if: steps.nyx-infer.outputs.newRelease == 'true'
       run: |
         mv RELEASE_NOTES.md RELEASE_NOTES.old
         cat CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
         rm RELEASE_NOTES.old
 
     - name: Nyx publish
+      if: steps.nyx-infer.outputs.newRelease == 'true'
       id: nyx-publish
       uses: mooltiverse/nyx-github-action@main
       with:
