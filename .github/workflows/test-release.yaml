@@ -12,13 +12,21 @@ jobs:
         include:
           - component: fake1
             sleep: 5
+            secret_name: SECRET1
           - component: fake2
             sleep: 10
+            secret_name: SECRET2
           - component: fake3
             sleep: 20
+            secret_name: SECRET3
+    env:
+      SECRET: ${{ secrets[matrix.secret_name] }}
+
     steps:
       - name: Execute fake test
-        run: sleep ${{ matrix.sleep }}
+        run: |
+          sleep ${{ matrix.sleep }}
+          echo "The name of the secret is $SECRET"
 
   release-version:
     name: Publish the release (if any) with Nyx
