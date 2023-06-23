@@ -15,11 +15,4 @@ package2:
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
     tag: "0.39.0"
-  hello: world
-  new: this
-  other: value
-  fix: value
-  next: value
-  this: value
-  more: values
-  othe: one
+
