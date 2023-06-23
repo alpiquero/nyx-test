@@ -1,3 +1,20 @@
+## [3.0.0](https://github.com/alpiquero/nyx-test/tag/3.0.0) (2023-06-23)
+
+### Added
+
+* [[6c171](https://github.com/alpiquero/nyx-test/commit/6c171bb1d46702875f9388f7752595f445440f5a)] feat: add third value
+
+BREAKING CHANGE: This will be a breking change
+ (Angel Luis Piquero, 2023-06-23T15:31:07)
+
+* [[aa73f](https://github.com/alpiquero/nyx-test/commit/aa73f10fceea5b5ca08151fc714df216bb370838)] feat: add other one value
+ (Angel Luis Piquero, 2023-06-23T15:31:07)
+
+### Fixed
+
+* [[6967e](https://github.com/alpiquero/nyx-test/commit/6967ef2a11af02333326dfe5005c5c73b746e65a)] fix: removed unused value
+ (Angel Luis Piquero, 2023-06-23T15:31:07)
+
 ## [2.0.0](https://github.com/alpiquero/nyx-test/tag/2.0.0) (2023-06-23)
 
 ### Fixed
