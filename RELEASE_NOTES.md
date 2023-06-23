@@ -1,3 +1,12 @@
+## [2.0.0](https://github.com/alpiquero/nyx-test/tag/2.0.0) (2023-06-23)
+
+### Fixed
+
+* [[84f08](https://github.com/alpiquero/nyx-test/commit/84f0820b03b46ba5fd3e2982d93f14c5fdf1dd71)] fix: breaking
+
+BREAKING CHANGE: bump breaking change
+ (Angel Luis Piquero, 2023-06-23T15:22:55)
+
 ## [1.0.0](https://github.com/alpiquero/nyx-test/tag/1.0.0) (2023-06-23)
 
 ### Added
