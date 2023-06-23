@@ -1,5 +1,107 @@
 ## [1.0.0](https://github.com/alpiquero/nyx-test/tag/1.0.0) (2023-06-23)
 
+### Added
+
+* [[0e7f1](https://github.com/alpiquero/nyx-test/commit/0e7f15062c7d253d78067959f1cd4bb8de633e36)] feat: introduce br
+
+BREAKING CHANGE: another br change
+ (Angel Luis Piquero, 2023-06-23T09:20:01)
+
+* [[361bb](https://github.com/alpiquero/nyx-test/commit/361bb9742c16a97fe1222527907c5015164faceb)] feat: add new value
+ (Angel Luis Piquero, 2023-06-23T09:13:28)
+
+* [[58aa9](https://github.com/alpiquero/nyx-test/commit/58aa93ad35abaf0c9072aaf323cbf403e4906eb6)] feat: remove unused value
+
+BREAKING CHANGE: introduce another br
+ (Angel Luis Piquero, 2023-06-23T08:53:04)
+
+* [[c210f](https://github.com/alpiquero/nyx-test/commit/c210fca122c8b00d056557d9285ba87eee5d7501)] feat: remove unused values
+
+BEAKING CHANGE: introduces breaking changes
+ (Angel Luis Piquero, 2023-06-23T07:45:46)
+
+* [[3dfad](https://github.com/alpiquero/nyx-test/commit/3dfadbf27f94e1f4347073ede2e40697c32166cc)] feat: remove unused value
+ (Angel Luis Piquero, 2023-06-23T07:42:23)
+
+* [[dd1a1](https://github.com/alpiquero/nyx-test/commit/dd1a193f4318adde6f9f9c7eb285c50b178afff0)] feat: remove file
+ (Angel Luis Piquero, 2023-06-23T07:04:21)
+
+* [[7cdfe](https://github.com/alpiquero/nyx-test/commit/7cdfe42471200e72a3eb666e263e8366b71cf1bb)] feat: remove file
+ (Angel Luis Piquero, 2023-06-22T17:24:24)
+
+* [[bbbc7](https://github.com/alpiquero/nyx-test/commit/bbbc7ad59894d5dc120a28dba1c53fa88e34fa33)] feat: remove test2
+ (Angel Luis Piquero, 2023-06-22T16:24:13)
+
+* [[303a7](https://github.com/alpiquero/nyx-test/commit/303a78c6214b1bf483ee85e7e923dc2e4a199e04)] feat: test ci
+ (Angel Luis Piquero, 2023-06-22T16:19:13)
+
+* [[93afc](https://github.com/alpiquero/nyx-test/commit/93afc5ba66cfa140a9d8254b4404f70410fa04f0)] feat: remove test3
+ (Angel Luis Piquero, 2023-06-22T16:04:17)
+
+### Fixed
+
+* [[3b197](https://github.com/alpiquero/nyx-test/commit/3b19791717c731a428194c405e0ade8824d888bc)] fix: add missing value
+ (Angel Luis Piquero, 2023-06-23T08:56:07)
+
+* [[475eb](https://github.com/alpiquero/nyx-test/commit/475eb87441be65db8cb732c1ee294f4bd3004617)] fix: publish step
+ (Angel Luis Piquero, 2023-06-22T17:20:35)
+
+* [[2ec05](https://github.com/alpiquero/nyx-test/commit/2ec0558df6192918371dbe3265f0cb90b2bf3123)] fix: workflow_run
+ (Angel Luis Piquero, 2023-06-22T16:55:50)
+
+## [1.0.0](https://github.com/alpiquero/nyx-test/tag/1.0.0) (2023-06-23)
+
+### Added
+
+* [[0e7f1](https://github.com/alpiquero/nyx-test/commit/0e7f15062c7d253d78067959f1cd4bb8de633e36)] feat: introduce br
+
+BREAKING CHANGE: another br change
+ (Angel Luis Piquero, 2023-06-23T09:20:01)
+
+* [[361bb](https://github.com/alpiquero/nyx-test/commit/361bb9742c16a97fe1222527907c5015164faceb)] feat: add new value
+ (Angel Luis Piquero, 2023-06-23T09:13:28)
+
+* [[58aa9](https://github.com/alpiquero/nyx-test/commit/58aa93ad35abaf0c9072aaf323cbf403e4906eb6)] feat: remove unused value
+
+BREAKING CHANGE: introduce another br
+ (Angel Luis Piquero, 2023-06-23T08:53:04)
+
+* [[c210f](https://github.com/alpiquero/nyx-test/commit/c210fca122c8b00d056557d9285ba87eee5d7501)] feat: remove unused values
+
+BEAKING CHANGE: introduces breaking changes
+ (Angel Luis Piquero, 2023-06-23T07:45:46)
+
+* [[3dfad](https://github.com/alpiquero/nyx-test/commit/3dfadbf27f94e1f4347073ede2e40697c32166cc)] feat: remove unused value
+ (Angel Luis Piquero, 2023-06-23T07:42:23)
+
+* [[dd1a1](https://github.com/alpiquero/nyx-test/commit/dd1a193f4318adde6f9f9c7eb285c50b178afff0)] feat: remove file
+ (Angel Luis Piquero, 2023-06-23T07:04:21)
+
+* [[7cdfe](https://github.com/alpiquero/nyx-test/commit/7cdfe42471200e72a3eb666e263e8366b71cf1bb)] feat: remove file
+ (Angel Luis Piquero, 2023-06-22T17:24:24)
+
+* [[bbbc7](https://github.com/alpiquero/nyx-test/commit/bbbc7ad59894d5dc120a28dba1c53fa88e34fa33)] feat: remove test2
+ (Angel Luis Piquero, 2023-06-22T16:24:13)
+
+* [[303a7](https://github.com/alpiquero/nyx-test/commit/303a78c6214b1bf483ee85e7e923dc2e4a199e04)] feat: test ci
+ (Angel Luis Piquero, 2023-06-22T16:19:13)
+
+* [[93afc](https://github.com/alpiquero/nyx-test/commit/93afc5ba66cfa140a9d8254b4404f70410fa04f0)] feat: remove test3
+ (Angel Luis Piquero, 2023-06-22T16:04:17)
+
+### Fixed
+
+* [[3b197](https://github.com/alpiquero/nyx-test/commit/3b19791717c731a428194c405e0ade8824d888bc)] fix: add missing value
+ (Angel Luis Piquero, 2023-06-23T08:56:07)
+
+* [[475eb](https://github.com/alpiquero/nyx-test/commit/475eb87441be65db8cb732c1ee294f4bd3004617)] fix: publish step
+ (Angel Luis Piquero, 2023-06-22T17:20:35)
+
+* [[2ec05](https://github.com/alpiquero/nyx-test/commit/2ec0558df6192918371dbe3265f0cb90b2bf3123)] fix: workflow_run
+ (Angel Luis Piquero, 2023-06-22T16:55:50)
+
+## [1.0.0](https://github.com/alpiquero/nyx-test/tag/1.0.0) (2023-06-23)
+
 ### Fixed
 
 * [[3b197](https://github.com/alpiquero/nyx-test/commit/3b19791717c731a428194c405e0ade8824d888bc)] fix: add missing value
