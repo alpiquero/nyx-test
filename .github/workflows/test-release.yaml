@@ -1,0 +1,113 @@
+name: Test and release
+on:
+  push:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    name: Linting and Unit tests
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - component: fake1
+            sleep: 5
+          - component: fake2
+            sleep: 10
+          - component: fake3
+            sleep: 20
+    steps:
+      - name: Execute fake test
+        run: sleep ${{ matrix.sleep }}
+
+  release-version:
+    name: Publish the release (if any) with Nyx
+    needs:
+      - unit-tests
+    runs-on: ubuntu-latest
+    env:
+      NYX_VERBOSITY: 'INFO'
+
+    outputs:
+      newRelease: ${{ steps.nyx-publish.outputs.newRelease }}
+      version: ${{ steps.nyx-publish.outputs.version }}
+
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+    - name: Run nyx Infer
+      id: nyx-infer
+      uses: mooltiverse/nyx-github-action@main
+      with:
+        command: infer
+
+    - name: Bump chart versions
+      if: steps.nyx-infer.outputs.newVersion == 'true'
+      run: |
+        ./scripts/publish.sh ${{ steps.nyx-infer.outputs.version }}
+
+    - name: Nyx make
+      uses: mooltiverse/nyx-github-action@main
+      if: steps.nyx-infer.outputs.newRelease == 'true'
+      with:
+        command: 'make'
+
+    # We only generate the release notes when a new release is published and it is a core version.
+    - name: Generate release notes
+      if: steps.nyx-infer.outputs.newRelease == 'true'
+      run: |
+        mv RELEASE_NOTES.md RELEASE_NOTES.old
+        cat CHANGELOG.md RELEASE_NOTES.old >> RELEASE_NOTES.md
+        rm RELEASE_NOTES.old
+
+    - name: Nyx publish
+      if: steps.nyx-infer.outputs.newVersion == 'true'
+      id: nyx-publish
+      uses: mooltiverse/nyx-github-action@main
+      with:
+        command: 'publish'
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish-chart:
+    name: Publish the chart
+    runs-on: ubuntu-latest
+    needs: release-version
+    if: needs.release-version.outputs.newRelease == 'true'
+   
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        ref: ${{ needs.release-version.outputs.version }}
+
+    - name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+    - name: Install Chart Releaser
+      uses: helm/chart-releaser-action@v1.5.0
+      with:
+        install_only: true
+        version: v1.5.0
+    
+    - name: Get repository name
+      run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+
+    - name: Publish chart
+      run: ./scripts/release_chart.sh
+      env:
+        REPOSITORY_OWNER: ${{ github.repository_owner }}
+        REPOSITORY_NAME: ${{ env.REPOSITORY_NAME }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    

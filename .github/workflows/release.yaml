@@ -20,6 +20,38 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
+  unit-tests:
+    name: Linting and Unit tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        component:
+          - k8s-manager
+          - nats-manager
+      fail-fast: true
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.20.x
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          version: latest
+          working-directory: ./engine/${{ matrix.component }}
+          args: --timeout=5m
+      - name: Run unit tests
+        run: go test ./... -cover -v -coverprofile=coverage.out
+        working-directory: ./engine/{{ matrix.component }}}
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: engine/${{ matrix.component }}/coverage.out
+
   release-version:
     name: Publish the release (if any) with Nyx
     runs-on: ubuntu-latest
