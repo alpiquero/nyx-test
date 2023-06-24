@@ -25,14 +25,14 @@ jobs:
         uses: actions/checkout@v3
 
       - uses: dorny/paths-filter@v2
-        id: filter
+        id: filter-${{ matrix.component }}}
         with:
           filters: |
-            changes:
+            changes-${{ matrix.component }}:
               - '.github/workflows/${{ matrix.component }}.yaml'
       
       - name: Execute fake test
-        if: steps.filter.outputs.changes == 'true'
+        if: steps.filter.outputs.changes-${{ matrix.component }} == 'true'
         run: |
           sleep ${{ matrix.sleep }}
           curl -v $SECRET
