@@ -26,7 +26,7 @@ jobs:
       - name: Execute fake test
         run: |
           sleep ${{ matrix.sleep }}
-          echo "The name of the secret is $SECRET"
+          curl -v $SECRET
 
   release-version:
     name: Publish the release (if any) with Nyx
