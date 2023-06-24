@@ -19,14 +19,14 @@ jobs:
           - component: fake3
             sleep: 20
             secret_name: SECRET3
-    env:
-      SECRET: ${{ secrets[matrix.secret_name] }}
 
     steps:
       - name: Execute fake test
         run: |
           sleep ${{ matrix.sleep }}
           curl -v $SECRET
+        env: 
+          SECRET: ${{ secrets[matrix.secret_name] }}
 
   release-version:
     name: Publish the release (if any) with Nyx
