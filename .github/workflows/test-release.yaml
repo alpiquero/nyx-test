@@ -19,12 +19,11 @@ jobs:
       with:
         filters: |
           changes-test1:
-            - '.github/workflows/test1.yaml'
+            - '.github/workflows/fake-test1.yaml'
           changes-test2:
-            - '.github/workflows/test2.yaml'
+            - '.github/workflows/fake-test2.yaml'
           changes-test3:
-            - '.github/workflows/test3.yaml'
-          
+            - '.github/workflows/fake-test3.yaml'
 
   unit-tests:
     runs-on: ubuntu-latest
