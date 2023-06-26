@@ -50,6 +50,7 @@ jobs:
       - name: Execute fake test
         if: ${{ matrix.changes }} == 'true'
         run: |
+          echo "Changed folders: ${{ matrix.changes }}"
           sleep ${{ matrix.sleep }}
           curl -v $SECRET
         env: 
