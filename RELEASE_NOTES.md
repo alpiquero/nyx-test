@@ -1,3 +1,12 @@
+## [2.0.0](https://github.com/alpiquero/nyx-test/tag/2.0.0) (2023-06-26)
+
+### Added
+
+* [[c5cc4](https://github.com/alpiquero/nyx-test/commit/c5cc4c27d5a76fdc260b4644ee5ea4ec0feba177)] feat: add fifth value
+
+BREAKING CHANGE: Added new value will force users to take manual actions
+ (Angel Luis Piquero, 2023-06-26T09:29:47)
+
 ## [1.0.0](https://github.com/alpiquero/nyx-test/tag/1.0.0) (2023-06-26)
 
 ### Added
