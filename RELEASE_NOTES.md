@@ -30,6 +30,36 @@ BREAKING CHANGE: This will be a breking change
 
 ## [3.0.0](https://github.com/alpiquero/nyx-test/tag/3.0.0) (2023-06-26)
 
+### Added
+
+* [[38621](https://github.com/alpiquero/nyx-test/commit/38621b400637639eae6eb6fa25b7b617ef0fbe95)] feat: add fake feature
+
+* feat: add fake feature
+
+* Release version 3.1.0-release.3
+ (Ángel Luis Piquero Coloma, 2023-06-26T09:00:30)
+
+* [[f9bba](https://github.com/alpiquero/nyx-test/commit/f9bba682d180ccca677c4487fcee23ed1315ce89)] feat: add fourth value
+ (Angel Luis Piquero, 2023-06-26T08:37:58)
+
+* [[93405](https://github.com/alpiquero/nyx-test/commit/9340566a675e078a710aaf84fe50214309e2e2e3)] feat: add third value
+
+BREAKING CHANGE: This will be a breking change
+ (Angel Luis Piquero, 2023-06-23T15:27:50)
+
+* [[2c219](https://github.com/alpiquero/nyx-test/commit/2c219c44d44026c79d36f955c464481c3a7ee0da)] feat: add other one value
+ (Angel Luis Piquero, 2023-06-23T15:26:36)
+
+### Fixed
+
+* [[ce680](https://github.com/alpiquero/nyx-test/commit/ce680b33b8ff4e634e74a60bd7373e5785a7e92f)] fix: rebase errors
+ (Angel Luis Piquero, 2023-06-26T08:50:24)
+
+* [[2789b](https://github.com/alpiquero/nyx-test/commit/2789b317b78a8ad1ee19ddda20156ecb72d84c00)] fix: removed unused value
+ (Angel Luis Piquero, 2023-06-23T15:25:08)
+
+## [3.0.0](https://github.com/alpiquero/nyx-test/tag/3.0.0) (2023-06-26)
+
 ### Fixed
 
 * [[ce680](https://github.com/alpiquero/nyx-test/commit/ce680b33b8ff4e634e74a60bd7373e5785a7e92f)] fix: rebase errors
