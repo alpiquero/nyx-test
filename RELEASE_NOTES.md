@@ -1,3 +1,11 @@
+## [3.2.0](https://github.com/alpiquero/nyx-test/tag/3.2.0) (2023-06-26)
+
+### Added
+
+* [[e6eae](https://github.com/alpiquero/nyx-test/commit/e6eae4ec551fec6a8971032e256db4f045ac7413)] feat: add new value
+
+ (Ángel Luis Piquero Coloma, 2023-06-26T11:05:42)
+
 ## [3.1.0](https://github.com/alpiquero/nyx-test/tag/3.1.0) (2023-06-26)
 
 ### Added
