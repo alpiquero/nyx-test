@@ -6,6 +6,10 @@ jobs:
   check-folder-changes:
     runs-on: ubuntu-latest
     name: Check folder changes
+    outputs:
+      changes-test1: ${{ steps.filter.outputs.changes-test1 }}
+      changes-test2: ${{ steps.filter.outputs.changes-test2 }}
+      changes-test3: ${{ steps.filter.outputs.changes-test3 }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
