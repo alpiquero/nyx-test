@@ -3,9 +3,29 @@ on:
   push:
 
 jobs:
+  check-folder-changes:
+    runs-on: ubuntu-latest
+    name: Check folder changes
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          changes-test1:
+            - .github/workflows/test1.yaml
+          changes-test2:
+            - .github/workflows/test2.yaml
+          changes-test3:
+            - .github/workflows/test3.yaml
+          
+
   unit-tests:
     runs-on: ubuntu-latest
     name: Linting and Unit tests
+    needs: check-folder-changes
     strategy:
       fail-fast: true
       matrix:
@@ -13,26 +33,19 @@ jobs:
           - component: fake-test1.yaml
             sleep: 5
             secret_name: SECRET1
+            changes: needs.check-folder-changes.outputs.changes-test1
           - component: fake-test2.yaml
             sleep: 10
             secret_name: SECRET2
+            changes: needs.check-folder-changes.outputs.changes-test2
           - component: fake-test3.yaml
             sleep: 20
             secret_name: SECRET3
+            changes: needs.check-folder-changes.outputs.changes-test3
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          filters: |
-            changes-${{ matrix.component }}:
-              - '.github/workflows/${{ matrix.component }}.yaml'
-      
       - name: Execute fake test
-        if: steps.filter.outputs.changes-${{ matrix.component }} == 'true'
+        if: matrix.changes == 'true'
         run: |
           sleep ${{ matrix.sleep }}
           curl -v $SECRET
