@@ -1,3 +1,11 @@
+## [3.0.0](https://github.com/alpiquero/nyx-test/tag/3.0.0) (2023-06-26)
+
+### Added
+
+* [[fe26e](https://github.com/alpiquero/nyx-test/commit/fe26ed46b4f943f2185c5c333c0ee5c535ff076d)] feat: add fifth value
+
+BREAKING CHANGE: Will cause BC (Ángel Luis Piquero Coloma, 2023-06-26T09:52:54)
+
 ## [2.0.0](https://github.com/alpiquero/nyx-test/tag/2.0.0) (2023-06-26)
 
 ### Added
