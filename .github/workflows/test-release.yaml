@@ -19,11 +19,11 @@ jobs:
       with:
         filters: |
           changes-test1:
-            - .github/workflows/test1.yaml
+            - '.github/workflows/test1.yaml'
           changes-test2:
-            - .github/workflows/test2.yaml
+            - '.github/workflows/test2.yaml'
           changes-test3:
-            - .github/workflows/test3.yaml
+            - '.github/workflows/test3.yaml'
           
 
   unit-tests:
@@ -37,19 +37,19 @@ jobs:
           - component: fake-test1.yaml
             sleep: 5
             secret_name: SECRET1
-            changes: needs.check-folder-changes.outputs.changes-test1
+            changes: ${{ needs.check-folder-changes.outputs.changes-test1 }}
           - component: fake-test2.yaml
             sleep: 10
             secret_name: SECRET2
-            changes: needs.check-folder-changes.outputs.changes-test2
+            changes: ${{ needs.check-folder-changes.outputs.changes-test2 }}
           - component: fake-test3.yaml
             sleep: 20
             secret_name: SECRET3
-            changes: needs.check-folder-changes.outputs.changes-test3
+            changes: ${{ needs.check-folder-changes.outputs.changes-test3 }}
 
     steps:
       - name: Execute fake test
-        if: matrix.changes == 'true'
+        if: ${{ matrix.changes }} == 'true'
         run: |
           sleep ${{ matrix.sleep }}
           curl -v $SECRET
