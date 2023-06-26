@@ -1,3 +1,11 @@
+## [3.1.0](https://github.com/alpiquero/nyx-test/tag/3.1.0) (2023-06-26)
+
+### Added
+
+* [[df60a](https://github.com/alpiquero/nyx-test/commit/df60a006a95bf376c0010d8dce041d437fc95b01)] feat: add new value to package2
+
+fix: other value (Ángel Luis Piquero Coloma, 2023-06-26T10:09:58)
+
 ## [3.0.0](https://github.com/alpiquero/nyx-test/tag/3.0.0) (2023-06-26)
 
 ### Added
