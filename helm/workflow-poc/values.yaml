@@ -8,7 +8,7 @@ package1:
     # Overrides the image tag whose default is the chart appVersion.
     tag: "3.1.0-develop.1"
   this: one
-  other: value
+  other: valu
 package2:
   image:
     repository: nginx
