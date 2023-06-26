@@ -16,3 +16,4 @@ package2:
     tag: "3.0.0"
   other: one
   third: value
+  fourth: value
