@@ -48,7 +48,7 @@ jobs:
 
     steps:
       - name: Execute fake test
-        if: ${{ matrix.changes }} == 'true'
+        if: matrix.changes == 'true'
         run: |
           echo "Changed folders: ${{ matrix.changes }}"
           sleep ${{ matrix.sleep }}
