@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   workflow-poc:
   - apiVersion: v2
+    appVersion: 4.0.0
+    created: "2023-12-01T09:17:50.469301988Z"
+    description: A Helm chart for Kubernetes
+    digest: aa9dda8828ed1e123de93ec2df1b87d742bdc1edda172622a0ca0dc86265553f
+    name: workflow-poc
+    type: application
+    urls:
+    - https://github.com/alpiquero/nyx-test/releases/download/workflow-poc-4.0.0/workflow-poc-4.0.0.tgz
+    version: 4.0.0
+  - apiVersion: v2
     appVersion: 3.2.0
     created: "2023-06-26T11:06:40.938600183Z"
     description: A Helm chart for Kubernetes
@@ -151,4 +161,4 @@ entries:
     urls:
     - https://github.com/alpiquero/nyx-test/download/workflow-poc-0.30.6.tgz
     version: 0.30.6
-generated: "2023-06-26T11:06:40.938686282Z"
+generated: "2023-12-01T09:17:50.469425498Z"
