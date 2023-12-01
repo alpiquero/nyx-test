@@ -1,3 +1,6 @@
+## [5.0.0](https://github.com/alpiquero/nyx-test/tag/5.0.0) (2023-12-01)
+
+No changes.
 ## [4.1.0](https://github.com/alpiquero/nyx-test/tag/4.1.0) (2023-12-01)
 
 No changes.
