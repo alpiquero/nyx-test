@@ -1,18 +1,12 @@
-## [6.1.0](https://github.com/alpiquero/nyx-test/tag/6.1.0) (2023-12-19)
+## [6.2.0-develop.1](https://github.com/alpiquero/nyx-test/tag/6.2.0-develop.1) (2023-12-19)
 
 ### Fixed
 
-* [[5fce8](https://github.com/alpiquero/nyx-test/commit/5fce83449e0526bc85b3e4ecfb1c8a2e25d0e2b6)] merge main ([[#21](https://github.com/alpiquero/nyx-test/issues/21)](https://github.com/alpiquero/nyx-test/issues/21))
-
-* fix: rm test3
-
-* feat: rm test4 (Ángel Luis Piquero Coloma, 2023-12-19T15:52:11)
+* [[89153](https://github.com/alpiquero/nyx-test/commit/8915399eed8fc3a6d430795b9d9106f0e26e6bb4)] fix: rm test5
+ (Angel Luis Piquero, 2023-12-19T15:56:30)
 
 ### Added
 
-* [[5fce8](https://github.com/alpiquero/nyx-test/commit/5fce83449e0526bc85b3e4ecfb1c8a2e25d0e2b6)] merge main ([[#21](https://github.com/alpiquero/nyx-test/issues/21)](https://github.com/alpiquero/nyx-test/issues/21))
-
-* fix: rm test3
-
-* feat: rm test4 (Ángel Luis Piquero Coloma, 2023-12-19T15:52:11)
+* [[c9dae](https://github.com/alpiquero/nyx-test/commit/c9dae4c316c3be0aa32ab8dbda3831497d676829)] feat: rm file
+ (Angel Luis Piquero, 2023-12-19T15:56:13)
 
