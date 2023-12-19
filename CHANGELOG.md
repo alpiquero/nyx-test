@@ -1,12 +1,22 @@
-## [6.2.0-develop.1](https://github.com/alpiquero/nyx-test/tag/6.2.0-develop.1) (2023-12-19)
-
-### Fixed
-
-* [[89153](https://github.com/alpiquero/nyx-test/commit/8915399eed8fc3a6d430795b9d9106f0e26e6bb4)] fix: rm test5
- (Angel Luis Piquero, 2023-12-19T15:56:30)
+## [6.2.0](https://github.com/alpiquero/nyx-test/tag/6.2.0) (2023-12-19)
 
 ### Added
 
-* [[c9dae](https://github.com/alpiquero/nyx-test/commit/c9dae4c316c3be0aa32ab8dbda3831497d676829)] feat: rm file
- (Angel Luis Piquero, 2023-12-19T15:56:13)
+* [[63073](https://github.com/alpiquero/nyx-test/commit/630739e58264d4b2ba0c52fb25fda3b5bbe1d9ba)] merge main ([[#22](https://github.com/alpiquero/nyx-test/issues/22)](https://github.com/alpiquero/nyx-test/issues/22))
+
+* ci: fix commit convention
+
+* feat: rm file
+
+* fix: rm test5 (Ángel Luis Piquero Coloma, 2023-12-19T15:57:41)
+
+### Fixed
+
+* [[63073](https://github.com/alpiquero/nyx-test/commit/630739e58264d4b2ba0c52fb25fda3b5bbe1d9ba)] merge main ([[#22](https://github.com/alpiquero/nyx-test/issues/22)](https://github.com/alpiquero/nyx-test/issues/22))
+
+* ci: fix commit convention
+
+* feat: rm file
+
+* fix: rm test5 (Ángel Luis Piquero Coloma, 2023-12-19T15:57:41)
 
