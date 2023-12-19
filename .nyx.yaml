@@ -6,6 +6,7 @@ preset: "simple"
 commitMessageConventions:
   enabled:
     - conventionalCommitsForMerge
+    - conventionalCommits
   items:
     conventionalCommits:
       expression: "(?m)^(?<type>[a-zA-Z0-9_]+)(!)?(\\((?<scope>[a-zA-Z0-9 -]+)\\))?:( (?<title>.+))$(?s).*"
@@ -33,7 +34,7 @@ changelog:
     "Fixed": "^fix$"
     "Changed": "^(chore|perf|style|docs)$"
   substitutions:
-    "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/mooltiverse/nyx/issues/%s)"
+    "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/alpiquero/nyx-test/issues/%s)"
 releaseTypes: 
   enabled: 
     - mainline
