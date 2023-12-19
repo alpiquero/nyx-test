@@ -6,7 +6,6 @@ preset: "simple"
 commitMessageConventions:
   enabled:
     - conventionalCommitsForMerge
-    - conventionalCommits
   items:
     conventionalCommits:
       expression: "(?m)^(?<type>[a-zA-Z0-9_]+)(!)?(\\((?<scope>[a-zA-Z0-9 -]+)\\))?:( (?<title>.+))$(?s).*"
