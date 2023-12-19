@@ -6,6 +6,7 @@ preset: "simple"
 commitMessageConventions:
   enabled:
     - conventionalCommitsForMerge
+    - conventionalCommits
   items:
     conventionalCommits:
       expression: "(?m)^(?<type>[a-zA-Z0-9_]+)(!)?(\\((?<scope>[a-zA-Z0-9 -]+)\\))?:( (?<title>.+))$(?s).*"
@@ -14,7 +15,7 @@ commitMessageConventions:
         minor: "(?s)(?m)^feat(!{0})(\\([a-zA-Z0-9 -]+\\))?: (?!.*^(BREAKING( |-)CHANGE: )).*"
         patch: "(?s)(?m)^fix(!{0})(\\([a-zA-Z0-9 -]+\\))?: (?!.*^(BREAKING( |-)CHANGE: )).*"
     conventionalCommitsForMerge:
-      expression: " "
+      expression: "(?<type>[a-zA-Z0-9_]+)(!)?(\\((?<scope>[a-zA-Z0-9 -]+)\\))?:( (?<title>.+))"
       bumpExpressions:
         major: "(?s)(?m)[a-zA-Z0-9_]+(!: .*|.*^(BREAKING( |-)CHANGE: )).*"
         minor: "(?s)(?m)feat(!{0})(\\([a-zA-Z0-9 -]+\\))?: (?!.*^(BREAKING( |-)CHANGE: )).*"
@@ -33,7 +34,7 @@ changelog:
     "Fixed": "^fix$"
     "Changed": "^(chore|perf|style|docs)$"
   substitutions:
-    "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/mooltiverse/nyx/issues/%s)"
+    "(?m)#([0-9]+)(?s)": "[#%s](https://github.com/alpiquero/nyx-test/issues/%s)"
 releaseTypes: 
   enabled: 
     - mainline
